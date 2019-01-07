@@ -30,7 +30,7 @@ li{
 }
 .gl-title a {
   position: absolute;
-  left: 0;
+  left: 10px;
   top: 10px;
   display: block;
   width: 110px;
@@ -41,6 +41,7 @@ li{
 /*言語切替*/
 .util-nav {
   float: right;
+  margin-right: 10px;
 }
 .util-nav ul {
   height: 37px;
@@ -93,9 +94,9 @@ li{
 .gl-nav li a{
   display: block;
   text-decoration: none;
-  font-size: 18px;
+  font-size: 16px;
   border-left: 1px solid #666;
-  padding-left: 30px;
+  padding-left: 26px;
   /*padding-right: 20px;*/
 }
 /*.gl-nav li a::after{
@@ -113,8 +114,14 @@ li{
 .gl-nav li a:hover{
   color: orange;
 }
+/*パンくずリスト*/
+.breadcrumb ul{
+ display: flex;
+ margin: 10px 0;
+}
 .bread{
-  display: flex;
+  display: block;
+ margin: 0 5px;
 }
 /*topページ*/
 .hero{
@@ -129,6 +136,7 @@ li{
 }
 /*about*/
 .about{
+  clear: both;
   width: 960px;
   height: 400px;
   margin: 0 auto;
