@@ -7,20 +7,26 @@
   margin: 0;
   padding: 0;
 }
+html{
+  border-top: 1px solid #444;
+}
 body{
   /*font-family: 'Noto Sans JP','Noto Sans','Noto Sans TC';*/
-  width: 960px;
-  margin: 0 auto;
-  /*background-color: #222;*/
   color: #222;
 }
 ul li{
   list-style-type: none;
 }
+main{
+  width: 960px;
+  margin: 0 auto;
+}
 .gl-header{
-  width: 100%;
+  width: 960px;
+  /*width: 100%;*/
   height: 91px;
-  /*border-bottom: 1px solid #fff;*/
+  border-bottom: 1px solid #444;
+  margin: 0 auto;
 }
 .container{
   width: 960px;
@@ -34,23 +40,25 @@ ul li{
 }
 .gl-title a {
   position: absolute;
-  left: 10px;
+  left: 20px;
   top: 10px;
   display: block;
   width: 110px;
-  height: 80px;
+  height: 70px;
   background: url(../images/top-logo.png) no-repeat;
   text-indent: -9999px;
 }
 /*言語切替*/
 .util-nav {
   float: right;
-  margin-right: 10px;
+  margin-right: 30px;
+  padding-bottom: 10px;
 }
 .util-nav ul {
   height: 37px;
   list-style-type: none;
   padding-top: 14px;
+  text-align: center;
   display: table;
 }
 .util-nav li {
@@ -86,16 +94,17 @@ ul li{
 /*グローバルナビげーしょん*/
 .gl-nav {
   /*clear: both;*/
-  height: 60px;
-  width: 730px;
+  height: 90px;
+  width: 800px;
   }
 .gl-nav ul {
   display: flex;
+  /*margin-left: 10px;*/
 }
 .gl-nav li{
   text-align: center;
-  margin: 45px 20px 20px 10px;
-  padding: 0px 10px 0px 20px;
+  margin: 45px 0px 20px 20px;
+  padding: 0px 0px 0px 20px;
   border-left: 1px solid #666;
 }
 .gl-nav li a{
@@ -107,6 +116,7 @@ ul li{
 
 .gl-nav li:first-child{
   border: none;
+  margin-left: 50px;
 }
 .gl-nav li a:link{
   color: #333;
@@ -118,9 +128,12 @@ ul li{
   color: orange;
 }
 /*パンくずリスト*/
+.breadcrumb{
+  width: 960px;
+ margin: 10px auto;
+}
 .breadcrumb ul{
  display: flex;
- margin: 10px 0;
 }
 .breadcrumb ul li{
  margin: 0 8px;
@@ -189,23 +202,36 @@ ul li{
 
 /*自己紹介ページ*/
 .about-main{
-  width: 700px;
-  padding: 10px 20px;
-  float: left;
+  width: 960px;
+  margin: 10px auto;
 }
 .about-content{
-  width: 700px;
+  width: 100%;
   font-size: 14px;
-  margin: 20px 0;
-}
-.about-sub{
-  width: 210px;
+  float: left;
+  margin: 20px 10px;
+/*  padding: 10px 30px 10px 10px;
+*/}
+/*.about-sub{
+  width: 20%;
   height: 250px;
   float: right;
-  border: 1px solid #444;
+  /*border: 1px solid #444;*/
   margin-bottom: 10px;
-}
+/*}*/
 
+/****実績****/
+.ex-main{
+width: 960px;
+  margin: 20px auto;
+}
+.ex-voice{
+  /*display: flex;*/
+}
+.ex-voice video{
+  width: 150px;
+  height: 150px;
+}
 /*料金とサービス*/
 .rates-main{
   width: 700px;
@@ -215,23 +241,27 @@ ul li{
 table{
   border-collapse: collapse;
   margin: 10px 0;
+  width: 600px;
+  background-color: #dcdcdc;
 }
 table tr th{
-  border: 1px solid #a0a0a0;
+  border: 2px solid #fff;
   padding: 5px 10px;
 }
 table tr td{
-  border: 1px solid #a0a0a0;
+  border: 2px solid #fff;
   padding: 5px 10px;
+}
+caption{
+  text-align: left;
 }
 /*お問い合わせ*/
 .contact-main{
-  width: 700px;
-  padding: 10px 20px;
-  float: left;
+  width: 960px;
+  margin: 20px auto;
 }
 .contact-main p{
-margin: 10px 0 10px 10px;
+margin: 10px 0 10px 5px;
 }
 input[type="text"]{
 width: 200px;
@@ -253,15 +283,7 @@ input[type="submit"]{
 .ex-works{
 font-size: 12px;
 }
-/*.ex-voice video{
-width: 100px;
-height: 80px;
-}
-.ex-voice div{
-width: 250px;
-height: 120px;
-font-size: 14px;
-}*/
+
 
 .pagetop{
   clear: both;
@@ -273,10 +295,11 @@ footer{
   width: 960px;
   height: 150px;
   /*background-color: #dcdcdc;*/
-  /*position: relative;*/
+  position: relative;
   /*background: url(../images/hero_line.png) 0 0 repeat-x;*/
   border-top: 1px solid #444;
   padding: 0 10px 10px 10px;
+    margin: 0 auto;
 }
 .darth{
   width: 960px;
@@ -284,7 +307,7 @@ footer{
   background: url(../images/photo_04.png) 0 0 no-repeat;
   position: absolute;
   top: 5px;
-  left: 350px;
+  left: 700px;
 }
 .fot-logo{
   float: left;
@@ -296,4 +319,9 @@ footer{
 }
 .copy{
   text-align: center;
+}
+
+/*その他*/
+.shadow {
+  box-shadow: 5px 10px 20px rgba(0,0,0,0.25);
 }
