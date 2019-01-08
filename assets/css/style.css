@@ -1,17 +1,19 @@
 @charset "UTF-8";
 @import url('https://fonts.googleapis.com/css?family=Noto+Sans');
 @import url('https://fonts.googleapis.com/css?family=Noto+Sans+TC');
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+JP');
 
 *{
   margin: 0;
   padding: 0;
 }
 body{
-  font-family: 'Noto Sans','Noto Sans TC';
+  font-family: 'Noto Sans JP','Noto Sans','Noto Sans TC';
   width: 960px;
   margin: 0 auto;
+  color: #333;
 }
-li{
+ul li{
   list-style-type: none;
 }
 .gl-header{
@@ -89,20 +91,19 @@ li{
   display: flex;
 }
 .gl-nav li{
-  padding: 45px 10px 10px 20px;
+  text-align: center;
+  margin: 45px 20px 20px 10px;
+  padding: 0px 10px 0px 20px;
+  border-left: 1px solid #666;
 }
 .gl-nav li a{
   display: block;
   text-decoration: none;
   font-size: 16px;
-  border-left: 1px solid #666;
-  padding-left: 26px;
-  /*padding-right: 20px;*/
+  /*padding-left: 0px;*/
 }
-/*.gl-nav li a::after{
-  content: "|";
-}*/
-.gl-nav li:first-child a {
+
+.gl-nav li:first-child{
   border: none;
 }
 .gl-nav li a:link{
@@ -119,11 +120,13 @@ li{
  display: flex;
  margin: 10px 0;
 }
-.bread{
-  display: block;
- margin: 0 5px;
+.breadcrumb ul li{
+ margin: 0 8px;
 }
 /*topページ*/
+/*section{
+  border: 1px solid #dcdcdc;
+}*/
 .hero{
   clear: both;
 }
@@ -140,7 +143,6 @@ li{
   width: 960px;
   height: 400px;
   margin: 0 auto;
-  border: 1px solid #dcdcdc;
 }
 /*news*/
 .news{
@@ -154,7 +156,6 @@ li{
   width: 960px;
   height: 400px;
   margin: 0 auto;
-  border: 1px solid #dcdcdc;
   }
 /*samples*/
 .samples{
@@ -166,14 +167,96 @@ li{
 /*contact*/
 .contact{
   width: 960px;
-  height: 400px;
+  height: 300px;
   margin: 0 auto;
-  border: 1px solid #dcdcdc;
+  text-align: center;
 }
+.contact-box{
+  width: 875px;
+  height: 175px;
+  background-color: #dcdcdc;
+  padding-top: 25px;
+  margin: 45px auto;
+  border-radius: 2px;
+}
+.contact-button{
+  width: 220px;
+  height: 46px;
+  background-color: #fff;
+  margin: 20px auto;
+  border-radius: 2px;
+}
+
+/*自己紹介ページ*/
+.about-main{
+  width: 700px;
+  padding: 10px 20px;
+  float: left;
+}
+.about-content{
+  width: 700px;
+  font-size: 14px;
+  margin: 20px 0;
+}
+.about-sub{
+  width: 210px;
+  height: 250px;
+  float: right;
+  background-color: #fff;
+  margin-bottom: 10px;
+}
+
+/*料金とサービス*/
+.rates-main{
+  width: 700px;
+  padding: 10px 20px;
+  float: left;
+}
+table{
+  border-collapse: collapse;
+  margin: 10px 0;
+}
+table tr th{
+  border: 1px solid #a0a0a0;
+  padding: 5px 10px;
+}
+table tr td{
+  border: 1px solid #a0a0a0;
+  padding: 5px 10px;
+}
+/*お問い合わせ*/
+.contact-main{
+  width: 700px;
+  padding: 10px 20px;
+  float: left;
+}
+.contact-main p{
+margin: 10px 0 10px 10px;
+}
+input[type="text"]{
+width: 200px;
+}
+input[type="email"]{
+width: 300px;
+}
+input[type="tel"]{
+  width: 200px;
+}
+textarea{
+  width: 425px;
+  height: 120px;
+}
+input[type="submit"]{
+  padding: 2px 5px;
+}
+
+
 /*footer*/
 footer{
+  clear: both;
   width: 960px;
   height: 150px;
+  background-color: #dcdcdc;
 }
 .pagetop{
   float: right;
