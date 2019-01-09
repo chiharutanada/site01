@@ -8,12 +8,13 @@
   padding: 0;
 }
 html{
-  border-top: 1px solid #333;
-  border-bottom: 1px solid #333;
+
 }
 body{
-  /*font-family: 'Noto Sans JP','Noto Sans','Noto Sans TC';*/
-  color: #333;
+  font-family: 'Noto Sans JP','Noto Sans','Noto Sans TC';
+  background-color: #444;
+  color: #fff;
+  font-size: 100%;
 }
 ul li{
   list-style-type: none;
@@ -33,11 +34,11 @@ a{
   /*width: 960px;*/
   /*width: 100%;*/
   height: 91px;
-  border-bottom: 1px solid #333;
+  border-bottom: 1px solid #fff;
   margin: 0 auto;
-  background-color: #fda085;
-  /*background: linear-gradient(#fda085, #fdc385);*/
-  color: #000;
+  /*background-color: #fda085;*/
+
+  color: #fff;
 }
 .gl-title{
   width: 110px;
@@ -50,9 +51,9 @@ a{
   left: 20px;
   top: 10px;
   display: block;
-  width: 110px;
+  width: 110px; /*もとは110px*/
   height: 70px;
-  background: url(../images/top-logo.png) no-repeat;
+  background: url(../images/top-logo-w.png) no-repeat;
   text-indent: -9999px;
 }
 /*言語切替*/
@@ -74,16 +75,16 @@ a{
 }
 .util-nav li a {
   font-size: 12px;
-  color: #666;
+  color: #fff;
   padding-left: 10px;
   margin-left: 10px;
-  border-left: 1px solid #666;
+  border-left: 1px solid #fff;
 }
 .util-nav li:first-child a {
   border: none;
 }
 .util-nav li a:hover {
-  color: #f64233;
+  color: #ffe7c4;
   text-decoration: underline;
 }
 /*faccebook icon*/
@@ -113,7 +114,7 @@ height: 90px;
   text-align: center;
   margin: 45px 0px 20px 20px;
   padding: 0px 0px 0px 20px;
-  border-left: 1px solid #666;
+  /*border-left: 1px solid #fff;*/
   /*width: 95px;*/
 }
 .gl-nav li a{
@@ -133,7 +134,7 @@ height: 90px;
   content: '';
   width: 100%;
   height: 3px;
-  background: #fff;
+  background: #f85658;
   transform: scale(0, 1);
   transform-origin: center top;
   transition: transform .3s;
@@ -150,16 +151,15 @@ height: 90px;
   margin-left: 50px;
 }
 a:link{
-  color: #333;
+  color: #fff;
 }
 a:visited{
-  color: #333;
+  color: #fff;
 }
 /*パンくずリスト*/
 .breadcrumb{
 height: 30px;
  /*margin: 10px auto;*/
- background-color: #bbb;
 }
 .breadcrumb ul{
  display: flex;
@@ -175,39 +175,64 @@ height: 30px;
   border: 1px solid #dcdcdc;
 }*/
 .hero{
-  width: 960px;
   height: 400px;
-  /*background-color: #dcdcdc;*/
+  background-color: #555;
   clear: both;
-  margin: 0 auto;
-    /*text-indent: -9999px;*/
 }
 /*about*/
 .about{
   clear: both;
-  width: 960px;
   height: 400px;
-  margin: 0 auto;
+  display: flex;
+}
+.about div:first-child{
+  width: 70%;
+  margin: 50px;
+}
+.about div:last-child{
+  width: 30%;
+  margin: 50px;
+}
+.about h2{
+  background-color: #f85658;
 }
 /*news*/
 .news{
-  width: 960px;
   height: 400px;
-  background-color: #dcdcdc;
-  margin: 0 auto;
+  background-color: #555;
+  display: flex;
+}
+.news div{
+  width: 50%;
+  padding: 50px;
+}
+.news h2{
+  background-color: #f85658;
 }
 /*works*/
 .works{
-  width: 960px;
   height: 400px;
-  margin: 0 auto;
-  }
+  display: flex;
+}
+.works div{
+  width: 50%;
+  padding: 50px;
+}
+.works h2{
+  background-color: #f85658;
+}
 /*samples*/
-.samples{
-  width: 960px;
-  height: 400px;
-  background-color: #dcdcdc;
-  margin: 0 auto;
+.rates{
+    height: 400px;
+  display: flex;
+  background-color: #555;
+}
+.rates div{
+  width: 50%;
+  padding: 50px;
+}
+.rates h2{
+  background-color: #f85658;
 }
 /*contact*/
 .contact{
@@ -219,65 +244,73 @@ height: 30px;
 .contact-box{
   width: 875px;
   height: 175px;
-  background-color: #dcdcdc;
+  border: 1px solid #fff;
+  background-color: #ff5252;
   padding-top: 25px;
   margin: 45px auto;
   border-radius: 2px;
 }
 .contact-button{
+  /*background-color: #fff;*/
   width: 220px;
   height: 46px;
-  background-color: #fff;
   margin: 20px auto;
   border-radius: 2px;
 }
 
 /*自己紹介ページ*/
-.about-main{
-  width: 960px;
-  margin: 10px auto;
-}
 .about-content{
   width: 100%;
-  font-size: 14px;
   float: left;
-  margin: 20px 10px;
-/*  padding: 10px 30px 10px 10px;
-*/}
-/*.about-sub{
-  width: 20%;
-  height: 250px;
-  float: right;
-  /*border: 1px solid #444;*/
-  margin-bottom: 10px;
-/*}*/
+  margin: 20px 30px 20px 10px;
+  line-height: 2;
+}
+.about-main h2{
+  margin: 20px 0 20px 15px;
+  padding: 5px 10px;
+  background-color: rgba(246, 86, 88, 0.8 );
+}
+.about-content p{
+  margin: 20px 0;
+}
 
 /****実績****/
 .ex-main{
-width: 960px;
-  margin: 20px auto;
 }
 .ex-main h2{
-  margin: 30px 0 30px 15px;
+  margin: 20px 0 20px 15px;
+  padding: 5px 10px;
+  background-color: rgba(246, 86, 88, 0.8 );
+}
+.ex-main h3{
+    margin: 10px 0 0 15px;
+}
+/*h3の装飾テスト*/
+h3:first-letter{
+  font-size: 2em;
+}
+/*h3装飾おしまい*/
+.ex-main p{
+    margin: 10px 0 10px 15px;
 }
 .voice-box{
   width: 200px;
   height: 200px;
-  border: 2px solid #444;
+  border: 1px solid #ffe7c4;
   float: left;
   margin: 10px 15px 50px 15px;
   text-align: center;
   padding-top: 10px;
   position: relative;
+  background-color: #ffe7c4;
+  color: #333;
 }
 .voice-box-video{
   width: 100%;
   height: 60%;
-  background-color: #444;
-  border: 2px solid #444;
   position: absolute;
-  bottom: -2px;
-  left: -2px;
+  bottom: 0px;
+  left: 0px;
 }
 .ex-voice video{
   width: 200px;
@@ -286,10 +319,13 @@ width: 960px;
 .ex-movie{
   clear: both;
 }
+.ex-movie h3{
+    margin: 10px 0 0 15px;
+}
 .mov-box{
   width: 450px;
   height: 250px;
-  border: 2px solid #444;
+  border: 1px solid #f85658;
   float: left;
   margin: 10px 10px 50px 15px;
   position: relative;
@@ -300,11 +336,12 @@ width: 960px;
   right: 0;
   width: 50%;
   height: 100%;
-  background-color: #444;
 }
+
 .mov-box-txt{
   width: 50%;
   height: 100%;
+  background-color: rgba(246, 86, 88, 0.8 ); /*#f85658の透明度調節*/
 }
 .mov-box-txt p{
   padding: 10px;
@@ -317,58 +354,125 @@ width: 960px;
   clear: both;
   margin: 0 15px;
 }
+.ex-works p::before{
+  content: "■";
+}
 .ex-works-txt{
   padding: 5px 10px;
   margin-bottom: 10px;
-  background-color: #dcdcdc;
+  background-color: #555;
   border-radius: 3px;
 }
 /*料金とサービス*/
 .rates-main{
-  width: 700px;
-  padding: 10px 20px;
-  float: left;
+}
+.rates-main h2{
+  margin: 20px 0 20px 15px;
+  padding: 5px 10px;
+  background-color: rgba(246, 86, 88, 0.8 );
+}
+.rates-main:first-child p{
+    margin: 10px 0 30px 15px;
+}
+.rates-table{
+    margin: 10px 0 50px 15px;
+}
+.rates-caution{
+    margin: 10px 10px 10px 15px;
 }
 table{
   border-collapse: collapse;
   margin: 10px 0;
-  width: 100%;
-  border: 1px solid #666;
+  width: 70%;
+  /*border: 1px solid #555;*/
+  background-color: rgba(246, 86, 88, 0.8 );
+  table-layout: fixed;
 }
 table tr th{
-  padding: 5px 10px;
+  padding: 10px 10px;
   font-weight: normal;
-  border: 1px solid #666;
+  border: 2px dotted #555;
 }
 table tr td{
   padding: 5px 10px;
-  border: 1px solid #666;
+  border: 2px dotted #555;
+  background-color: #ffe7c4;
+  color: #333;
 }
 table caption{
   text-align: left;
   font-size: 18px;
   font-weight: bold;
 }
+.rates-caution{
+  width: 90%;
+  padding: 20px 0 20px 20px;
+  margin: 0 auto 30px auto;
+  background-color: #666;
+}
 /*お問い合わせ*/
+.contact-main h2{
+  margin: 20px 0 20px 15px;
+  padding: 5px 10px;
+  background-color: rgba(246, 86, 88, 0.8 );
+}
 .contact-main{
-  width: 960px;
-  margin: 20px auto;
+  border-radius: 3px;
+  height: 500px;
 }
 .contact-main p{
-margin: 10px 0 10px 5px;
+    margin: 10px 0 20px 15px;
+    padding-left: 10px;
+}
+form{
+  width: 85%;
+  height: 400px;
+  margin: 10px auto;
+  font-size: 1.2em;
+}
+form p{
+  position: relative;
 }
 input[type="text"]{
-width: 200px;
+position: absolute;
+top: 0;
+left: 150px;
+width: 300px;
+height: 25px;
+background-color: #ffe7c4;
+}
+form p{
+  position: relative;
 }
 input[type="email"]{
-width: 300px;
+  position: absolute;
+top: 0;
+left: 150px;
+width: 500px;
+height: 25px;
+background-color: #ffe7c4;
+}
+form p{
+  position: relative;
 }
 input[type="tel"]{
-  width: 200px;
+    position: absolute;
+  top: 0;
+left: 150px;
+  width: 300px;
+height: 25px;
+background-color: #ffe7c4;
+}
+form p{
+  position: relative;
 }
 textarea{
-  width: 425px;
-  height: 120px;
+    position: absolute;
+  top: 0;
+left: 150px;
+  width: 500px;
+  height: 200px;
+background-color: #ffe7c4;
 }
 input[type="submit"]{
   padding: 2px 5px;
@@ -380,7 +484,7 @@ font-size: 12px;
 
 
 .pagetop a:hover{
-  color: #f64233;
+  color: #b91515;
   text-decoration: underline;
 }
 /*footer*/
@@ -388,10 +492,7 @@ font-size: 12px;
 .gl-footer{
   clear: both;
   height: 150px;
-  border-top: 1px solid #444;
-  background-color: #fda085;
-  /*background: linear-gradient(#fda085, #fdc385);*/
-  color: #000;
+  border-top: 1px solid #fff;
 }
 footer .container{
   position: relative;
