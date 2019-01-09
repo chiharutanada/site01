@@ -30,59 +30,79 @@
         <ul>
           <li><a href="index.html">トップ</a></li>
           <li><a href="about.html">自己紹介</a></li>
-          <li>実績</li>
+          <li id="current">実績</li>
           <li><a href="rates.html">料金</a></li>
-          <li><a href="contact.html">お問い合わせ</a></li>
+          <li><a href="contact.html">お問いあわせ</a></li>
         </ul>
       </div>
     </nav>
   </header>
   <div class="breadcrumb">
+      <div class="container">
   <ul>
     <li><a href="index.html">トップ</a></li>
     <li>&gt;</li>
     <li>実績</li>
   </ul>
+</div>
   </div>
   <main>
     <section class="ex-main">
       <h2>実績</h2>
-      <h3>Voic sample</h3>
+      <h3>Voice sample</h3>
       <p>英日両方のナレーション業務も提供しています。<br>関連する台本等の翻訳も行っており、オリジナル台本からナレーションまでを含むサービスを提供。</p>
       <section class="ex-voice">
-        <div>
-      <img src="images/voice01.png" width="50px"><video src=“images/media/VarietyComic.mp3” poster="altImage.jpg" controls></video>
+        <div class="voice-box">
       バラエティ・コミカル編<br>(英語＆日本語)
+      <!-- <img src="images/voice01.png" width="50px"> -->
+      <div class="voice-box-video">
+      <video src=“images/media/VarietyComic.mp3” poster="altImage.jpg" controls></video>
       </div>
-      <div>
-      <video src=“images/media/Corporate.mp3” poster="altImage.jpg" controls></video>
+      </div>
+      <div class="voice-box">
       企業PR<br>(編英語)
+      <div class="voice-box-video">
+      <video src=“images/media/Corporate.mp3” poster="altImage.jpg" controls></video>
       </div>
-    </section>
-      <section class="ex-voice">
-      <div>
-      <video src=“images/media/Narration.mp4” poster="altImage.jpg" controls></video>
+      </div>
+      <div class="voice-box">
       ナレーター編<br>(英語)
+      <div class="voice-box-video">
+      <video src=“images/media/Narration.mp4” poster="altImage.jpg" controls></video>
       </div>
-      <div>
-      <video src=“images/media/Advertising.mp4” poster="altImage.jpg" controls></video>
+      </div>
+      <div class="voice-box">
       CM編<br>(英語＆日本語)
+      <div class="voice-box-video">
+      <video src=“images/media/Advertising.mp4” poster="altImage.jpg" controls></video>
+      </div>
       </div>
     </section>
       </section>
 
       <section class="ex-movie">
       <h3>Movie sample</h3>
-      <div>NHK Show TIme
+      <div class="mov-box">
+        <div class="mov-box-txt">
+        <p>NHK Show TIme(2011年)</p>
+        <p>American-sitcom-dubbed-into-Japanese type skit produced for NHK program Show Time. Russell played the father and overdubbed his own voice in to Japanese.</p>
+      </div>
+        <div class="mov-box-video">
+        <video src="images/media/ShowTime.mp4" poster="altImage.jpg" controls></video>
+        </div>
+      </div>
+      <div class="mov-box">
+        <div class="mov-box-txt">
+        <p>Satire Wars(1983年)</p>
+        <p>Parody of Star Wars made by Russell during high school.</p>
+        <div class="mov-box-video">
         <video src="images/media/ShowTime.mp4" poster="altImage.jpg" controls></video>
       </div>
-      <div>Satire Wars
-        <video src="images/media/ShowTime.mp4" poster="altImage.jpg" controls></video>
-      </div>
+    </div>
       </section>
       <section class="ex-works">
       <h3>翻訳･通訳をした主なクライアント（1994〜現在）</h3>
-      <div>日本<br>
+      <div class="ex-works-txt">日本<br>
 テレビ局・制作会社、テレビ番組・VPの通訳・台本翻訳・字幕翻訳<br>
 NHK BS 谷村新司のショータイム（海外アーティストのインタビュー通訳）<br>
 NHK ドキュメンタリー番組各種（字幕翻訳）<br>
@@ -99,7 +119,7 @@ AGC (旭硝子)<br>
 アイルランド政府商務庁<br>
 米系大手清涼飲料メーカー（翻訳）<br>
 </div>
-<div>
+<div class="ex-works-txt">
 ニュージーランド(1994-2001）<br>
 テレビジョン･ニュージーランド<br>
 Honda NZ、Toyota NZ、<br>
@@ -119,12 +139,14 @@ APEC 中小企業会議 (1999年・クライストチャーチ〜通訳)<br>
     </section>
       <p class="pagetop"><a href="#ex">Topへ戻る</a></p>
     </main>
-  <footer>
+  <footer class="gl-footer">
+    <div class="container">
     <small>
     <p class="fot-logo"><img src="images/fot-logo.png" alt="fot-logo" width="170px"></p>
     <p class="foot">ラッセル・グドール通訳<br>Tel.090-5335-6482<br>Mail.russell@goodall.jp<br>skype.russellgoodall</p>
     <p class="copy">&copy;Russel Goodall All rights reserved</p>
   </small>
+</div>
   </footer>
 </body>
 </html>

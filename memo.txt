@@ -1,0 +1,23 @@
+■グローバルナビhover時のアニメーション
+https://www.nxworld.net/tips/css-hover-underline-animation-examples-and-sass-mixin.html
+ホバーすると中央から左右に向かってラインが引かれる
+→２文字だとラインが短くなるのが難点...
+
+■カラー参考
+オレンジ系
+#f64233	グローバルナビhover時のライン
+#f85658	Googleフォントのオレンジ(ちなみにGoogleフォントの背景は#222)
+
+グレー系（うすい順）
+#dcdcdc	背景に使用するぐらい薄い灰色
+#666	ナビゲーションメニューの縦線
+#444	ナビゲーションメニューの下線
+#333	基本の文字色
+
+
+■真似できそうな他サイト
+https://www.honda.co.jp/design/
+→TOPのお問い合わせのところ
+
+CSSで写真に影つける
+http://proengineer.internous.co.jp/content/columnfeature/6282
