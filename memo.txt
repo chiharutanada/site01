@@ -6,7 +6,8 @@ https://www.nxworld.net/tips/css-hover-underline-animation-examples-and-sass-mix
 ■カラー参考
 オレンジ系
 #f64233	グローバルナビhover時のライン
-#f85658	Googleフォントのオレンジ(ちなみにGoogleフォントの背景は#222)
+#f85658(RGB:246 86 88)	Googleフォントのオレンジ(ちなみにGoogleフォントの背景は#222)
+#ffe7c4	ベージュ　テーブルに登場
 
 グレー系（うすい順）
 #dcdcdc	背景に使用するぐらい薄い灰色
@@ -21,3 +22,4 @@ https://www.honda.co.jp/design/
 
 CSSで写真に影つける
 http://proengineer.internous.co.jp/content/columnfeature/6282
+
