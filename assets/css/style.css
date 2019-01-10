@@ -267,24 +267,33 @@ height: 30px;
   color: #f85658;
   letter-spacing: 2.5px;
 }
-.about-content p{
-
+.about-content-my p{
+width: 60%;
+margin: 10px 0 0;
+padding-right: 10px;
+float: left;
 }
-
 /****実績****/
 .ex-main{
   padding: 20px 50px;
 }
 .ex-main h3{
-    margin: 10px 0 0 15px;
+  text-align: center;
+  border-bottom: 1px dotted #f64233;
 }
 /*h3の装飾テスト*/
+.ex-main h2{
+  padding-left: 0px;
+}
+.ex-main h2+p{
+    padding: 0 10px 30px 0;
+}
 h3:first-letter{
-  font-size: 2em;
+  font-size: 1.6em;
 }
 /*h3装飾おしまい*/
 .ex-main p{
-    margin: 10px 0 10px 15px;
+    margin: 10px 0 10px 5px;
 }
 .voice-box{
   width: 200px;
@@ -292,11 +301,14 @@ h3:first-letter{
   border: 2px solid #333;
   border-radius: 2px solid #333;
   float: left;
-  margin: 10px 20px 50px 0;
+  margin: 30px 20px 50px 0;
   text-align: center;
   padding-top: 10px;
   position: relative;
   color: #333;
+}
+.voice-box{
+  padding-left: 0;
 }
 .voice-box-video{
   width: 100%;
@@ -311,9 +323,7 @@ h3:first-letter{
 }
 .ex-movie{
   clear: both;
-}
-.ex-movie h3{
-    margin: 10px 0;
+  margin-bottom: 50px;
 }
 .mov-box{
   width: 850px;
@@ -334,7 +344,6 @@ h3:first-letter{
   background-color: #f85658; /*#f85658の透明度調節*/
 }
 .mov-box-txt p{
-  padding:20px;
   margin: 0;
 }
 .mov-box video{
@@ -351,25 +360,20 @@ h3:first-letter{
 .ex-works-txt{
   padding: 5px 10px;
   margin-bottom: 10px;
-  background-color: #dcdcdc;
+  background-color: #eee;
+  border: 1px solid #ddd;
   border-radius: 3px;
 }
 /*料金とサービス*/
-.rates-main{
-}
-.rates-main h2{
-  margin: 20px 0 20px 15px;
-  padding: 5px 10px;
-  background-color: rgba(246, 86, 88, 0.8 );
-}
-.rates-main:first-child p{
-    margin: 10px 0 30px 15px;
+
+h2+p{
+    padding: 0 0 10px 50px;
 }
 .rates-table{
-    margin: 10px 0 50px 15px;
+    padding: 10px 0 10px 50px;
 }
-.rates-caution{
-    margin: 10px 10px 10px 15px;
+.rates-table p{
+    padding-left: 10px;
 }
 table{
   border-collapse: collapse;
@@ -386,10 +390,11 @@ table tr th{
 table tr td{
   padding: 5px 10px;
   border: 2px dotted #555;
+  text-align: center;
 }
 table caption{
   text-align: left;
-  font-size: 18px;
+  font-size: 1.125rem;
   font-weight: bold;
 }
 .rates-caution{
@@ -399,75 +404,39 @@ table caption{
   background-color: #ffe7c4;
 }
 /*お問い合わせ*/
-.contact-main h2{
-  margin: 20px 0 20px 15px;
-  padding: 5px 10px;
-  /*background-color: rgba(246, 86, 88, 0.8 );*/
-}
+
 .contact-main{
-/*  border-radius: 3px;
-  height: 500px;*/
-    font-size: 16px;
 }
 .contact-main p{
-    margin: 10px 0 20px 15px;
-    padding-left: 10px;
+    /*margin: 10px 0 20px 15px;*/
+    padding-left: 50px;
+    margin: 10px 0;
 }
 form{
-  width: 80%;
-/*  height: 400px;
-  margin: 10px auto;
-  font-size: 1.2em;*/
+  margin-top: 50px;
 }
-/*
-form p{
-  position: relative;
-}
-input[type="text"]{
-position: absolute;
-top: 0;
-left: 150px;
-width: 300px;
-height: 25px;
-background-color: #ffe7c4;
-}
-form p{
-  position: relative;
-}
-input[type="email"]{
-  position: absolute;
-top: 0;
-left: 150px;
-width: 500px;
-height: 25px;
-background-color: #ffe7c4;
-}
-form p{
-  position: relative;
-}
-input[type="tel"]{
-    position: absolute;
-  top: 0;
-left: 150px;
+input{
   width: 300px;
-height: 25px;
-background-color: #ffe7c4;
+  height: 20px;
 }
-form p{
-  position: relative;
+input:hover{
+    border:solid 1px #f85658;
 }
-textarea{
-    position: absolute;
-  top: 0;
-left: 150px;
-  width: 500px;
-  height: 200px;
-background-color: #ffe7c4;
+textarea:hover{
+    border:solid 1px #f85658;
 }
 input[type="submit"]{
-  padding: 2px 5px;
+width: 80px;
+height: 40px;
+border-radius: 5px;
+color: #fff;
+background-color: #f85658;
 }
-*/
+textarea{
+  width: 500px;
+  height: 200px;
+
+}
 /*experience*/
 .ex-works{
 font-size: 12px;
