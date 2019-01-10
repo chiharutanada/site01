@@ -12,16 +12,22 @@ html{
 }
 body{
   font-family: 'Noto Sans JP','Noto Sans','Noto Sans TC';
-  background-color: #444;
-  color: #fff;
+  color: #333;
   font-size: 100%;
 }
 ul li{
   list-style-type: none;
 }
+h2{
+  padding: 10px 50px;
+  font-size: 2.3em;
+  color: #f85658;
+  letter-spacing: 2.5px;
+}
 main{
-  width: 960px;
+  width: 1000px;
   margin: 0 auto;
+  box-shadow: 0 0px 20px rgba(0,0,0,0.2);
 }
 .container{
   width: 960px;
@@ -36,8 +42,7 @@ a{
   height: 91px;
   border-bottom: 1px solid #fff;
   margin: 0 auto;
-  /*background-color: #fda085;*/
-
+  background-color: #444;
   color: #fff;
 }
 .gl-title{
@@ -101,10 +106,10 @@ a{
 }
 /*グローバルナビげーしょん*/
 .nav-container{
-width: 960px;
 margin: 0 auto;
 height: 90px;
-  /*test 倍率下げるとくずれ、ひとまずOK*/ width: 70%;
+  /*test 倍率下げるとくずれ、ひとまずOK*/
+  width: 70%;
 }
 .gl-nav ul {
   display: flex;
@@ -114,8 +119,6 @@ height: 90px;
   text-align: center;
   margin: 45px 0px 20px 20px;
   padding: 0px 0px 0px 20px;
-  /*border-left: 1px solid #fff;*/
-  /*width: 95px;*/
 }
 .gl-nav li a{
   text-decoration: none;
@@ -159,7 +162,6 @@ a:visited{
 /*パンくずリスト*/
 .breadcrumb{
 height: 30px;
- /*margin: 10px auto;*/
 }
 .breadcrumb ul{
  display: flex;
@@ -169,11 +171,9 @@ height: 30px;
 }
 .breadcrumb a{
   text-decoration: underline;
+  color: #333;
   }
 /*topページ*/
-/*section{
-  border: 1px solid #dcdcdc;
-}*/
 .hero{
   height: 400px;
   background-color: #555;
@@ -248,10 +248,8 @@ height: 30px;
   background-color: #ff5252;
   padding-top: 25px;
   margin: 45px auto;
-  border-radius: 2px;
 }
 .contact-button{
-  /*background-color: #fff;*/
   width: 220px;
   height: 46px;
   margin: 20px auto;
@@ -260,27 +258,22 @@ height: 30px;
 
 /*自己紹介ページ*/
 .about-content{
-  width: 100%;
-  float: left;
-  margin: 20px 30px 20px 10px;
+  padding: 20px 50px;
   line-height: 2;
 }
 .about-main h2{
-  margin: 20px 0 20px 15px;
-  padding: 5px 10px;
-  background-color: rgba(246, 86, 88, 0.8 );
+  padding: 10px 50px;
+  font-size: 2.3em;
+  color: #f85658;
+  letter-spacing: 2.5px;
 }
 .about-content p{
-  margin: 20px 0;
+
 }
 
 /****実績****/
 .ex-main{
-}
-.ex-main h2{
-  margin: 20px 0 20px 15px;
-  padding: 5px 10px;
-  background-color: rgba(246, 86, 88, 0.8 );
+  padding: 20px 50px;
 }
 .ex-main h3{
     margin: 10px 0 0 15px;
@@ -296,13 +289,13 @@ h3:first-letter{
 .voice-box{
   width: 200px;
   height: 200px;
-  border: 1px solid #ffe7c4;
+  border: 2px solid #333;
+  border-radius: 2px solid #333;
   float: left;
-  margin: 10px 15px 50px 15px;
+  margin: 10px 20px 50px 0;
   text-align: center;
   padding-top: 10px;
   position: relative;
-  background-color: #ffe7c4;
   color: #333;
 }
 .voice-box-video{
@@ -320,35 +313,33 @@ h3:first-letter{
   clear: both;
 }
 .ex-movie h3{
-    margin: 10px 0 0 15px;
+    margin: 10px 0;
 }
 .mov-box{
-  width: 450px;
-  height: 250px;
+  width: 850px;
+  height: 300px;
   border: 1px solid #f85658;
-  float: left;
-  margin: 10px 10px 50px 15px;
+  margin: 30px auto;
   position: relative;
 }
 .mov-box-video{
   position: absolute;
   top: 0;
-  right: 0;
-  width: 50%;
-  height: 100%;
+  left: 425px;
 }
 
 .mov-box-txt{
   width: 50%;
   height: 100%;
-  background-color: rgba(246, 86, 88, 0.8 ); /*#f85658の透明度調節*/
+  background-color: #f85658; /*#f85658の透明度調節*/
 }
 .mov-box-txt p{
-  padding: 10px;
+  padding:20px;
+  margin: 0;
 }
 .mov-box video{
-  width: 225px;
-  height: 250px;
+  width: 425px;
+  height: 300px;
 }
 .ex-works{
   clear: both;
@@ -360,7 +351,7 @@ h3:first-letter{
 .ex-works-txt{
   padding: 5px 10px;
   margin-bottom: 10px;
-  background-color: #555;
+  background-color: #dcdcdc;
   border-radius: 3px;
 }
 /*料金とサービス*/
@@ -385,7 +376,6 @@ table{
   margin: 10px 0;
   width: 70%;
   /*border: 1px solid #555;*/
-  background-color: rgba(246, 86, 88, 0.8 );
   table-layout: fixed;
 }
 table tr th{
@@ -396,8 +386,6 @@ table tr th{
 table tr td{
   padding: 5px 10px;
   border: 2px dotted #555;
-  background-color: #ffe7c4;
-  color: #333;
 }
 table caption{
   text-align: left;
@@ -408,28 +396,30 @@ table caption{
   width: 90%;
   padding: 20px 0 20px 20px;
   margin: 0 auto 30px auto;
-  background-color: #666;
+  background-color: #ffe7c4;
 }
 /*お問い合わせ*/
 .contact-main h2{
   margin: 20px 0 20px 15px;
   padding: 5px 10px;
-  background-color: rgba(246, 86, 88, 0.8 );
+  /*background-color: rgba(246, 86, 88, 0.8 );*/
 }
 .contact-main{
-  border-radius: 3px;
-  height: 500px;
+/*  border-radius: 3px;
+  height: 500px;*/
+    font-size: 16px;
 }
 .contact-main p{
     margin: 10px 0 20px 15px;
     padding-left: 10px;
 }
 form{
-  width: 85%;
-  height: 400px;
+  width: 80%;
+/*  height: 400px;
   margin: 10px auto;
-  font-size: 1.2em;
+  font-size: 1.2em;*/
 }
+/*
 form p{
   position: relative;
 }
@@ -477,15 +467,15 @@ background-color: #ffe7c4;
 input[type="submit"]{
   padding: 2px 5px;
 }
+*/
 /*experience*/
 .ex-works{
 font-size: 12px;
 }
 
-
 .pagetop a:hover{
-  color: #b91515;
   text-decoration: underline;
+  color: #333;
 }
 /*footer*/
 
@@ -493,6 +483,8 @@ font-size: 12px;
   clear: both;
   height: 150px;
   border-top: 1px solid #fff;
+  background-color: #444;
+  color: #fff;
 }
 footer .container{
   position: relative;
@@ -520,4 +512,16 @@ footer .container{
 /*その他*/
 .shadow {
   box-shadow: 5px 10px 20px rgba(0,0,0,0.25);
+}
+/*レスポンシブ対応*/
+@media screen and (max-width: 480px){
+.gl-header{
+  height: 50px;
+}
+.gl-nav{
+display: none;
+}
+.gl-title{
+  margin: 0 auto;
+}
 }

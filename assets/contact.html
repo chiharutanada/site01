@@ -8,14 +8,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- ファビコン -->
   <link rel="icon" href="images/favicon.png" type="image/png">
-<!--   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css"> -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/sanitize.css">
 </head>
 <body id="contact">
   <header class="gl-header">
-    <div class="container">
+    <!-- <div class="container"> -->
         <h1 class="gl-title"><a href="index.html">Russel Goodall通訳</a></h1>
         <div class="util-nav">
             <ul>
@@ -24,9 +24,9 @@
             </ul>
             <a href="https://www.facebook.com/RussellGoodallInterpreter" class="facebook">facebook</a>
         </div>
-    </div>
+    <!-- </div> -->
     <nav class="gl-nav">
-      <div class="nav-container">
+      <div class="container">
         <ul>
           <li><a href="index.html">トップ</a></li>
           <li><a href="about.html">自己紹介</a></li>
@@ -37,9 +37,9 @@
       </div>
     </nav>
   </header>
-
+  <main>
   <div class="breadcrumb">
-      <div class="container">
+      <div class="form-container">
   <ul>
     <li><a href="index.html">トップ</a></li>
     <li>&gt;</li>
@@ -47,11 +47,10 @@
   </ul>
 </div>
   </div>
-  <main>
     <section class="contact-main">
-      <h2>お問い合わせ</h2>
+      <h2>Contact</h2>
       <p>お仕事のご依頼、お見積り、質問などお気軽にお問い合わせください。</p>
-    <form action="#" method="poat">
+<!--     <form action="#" method="poat">
       <p><label>お名前(*必須):
         <input type="text" name="name" required></p>
         <p><label>メール(*必須):
@@ -61,10 +60,30 @@
         <p><label>内容(*必須):
         <textarea name="comment"></textarea></label></p>
         <p><input type="submit" value="確認する"></p>
-    </form>
+    </form> -->
     </section>
+    <form class="boots">
+  <div class="form-group">
+    <label for="exampleFormControlInput1">お名前</label>
+    <input type="text" name="text" class="form-control" id="exampleFormControlInput1" placeholder="お名前" required>
+  </div>
+    <div class="form-group">
+    <label for="exampleFormControlInput1">ふりがな</label>
+    <input type="text" name="name" class="form-control" id="exampleFormControlInput1" placeholder="ふりがな">
+  </div>
+    <div class="form-group">
+    <label for="exampleFormControlInput1">メールアドレス</label>
+    <input type="email" name="name" class="form-control" id="exampleFormControlInput1" placeholder="メールアドレス" required>
+  </div>
+  <div class="form-group">
+    <label for="exampleFormControlTextarea1">お問い合わせ内容</label>
+    <textarea class="form-control" id="exampleFormControlTextarea1" rows="5"  required></textarea>
+  </div>
+<button type="submit" class="btn btn-primary">送信する</button>
+</form>
      <p class="pagetop"><a href="#contact">Topへ戻る</a></p>
   </main>
+
   <footer class="gl-footer">
     <div class="container">
     <small>
