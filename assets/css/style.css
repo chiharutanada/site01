@@ -9,6 +9,7 @@
 }
 html{
 border-top: 2px solid #ff5252;
+border-bottom: 2px solid #ff5252;
 }
 body{
   font-family: 'Noto Sans JP','Noto Sans','Noto Sans TC';
@@ -57,7 +58,7 @@ a:visited{
 }
 .gl-title a {
   position: absolute;
-  left: 20px;
+  left: -25px;
   top: 10px;
   display: block;
   width: 110px; /*もとは110px*/
@@ -68,7 +69,7 @@ a:visited{
 /*言語切替*/
 .util-nav {
   float: right;
-  margin-right: 30px;
+  /*margin-right: 30px;*/
   padding-bottom: 10px;
 }
 .util-nav ul {
@@ -112,8 +113,6 @@ a:visited{
 .nav-container{
 margin: 0 auto;
 height: 90px;
-  /*test 倍率下げるとくずれ、ひとまずOK*/
-  width: 70%;
 }
 .gl-nav ul {
   display: flex;
@@ -121,7 +120,7 @@ height: 90px;
 }
 .gl-nav li{
   text-align: center;
-  margin: 42px 0px 20px 20px;
+  margin: 32px 0px 20px 20px;
   padding: 0px 0px 0px 20px;
 }
 .gl-nav li a{
@@ -196,6 +195,9 @@ height: 30px;
   height: 400px;
   display: flex;
 }
+.about a{
+color: #333;
+}
 .about div:first-child{
   width: 70%;
   margin: 50px;
@@ -207,8 +209,11 @@ height: 30px;
 /*news*/
 .news{
   height: 400px;
-  background-color: #555;
+  background-color: #ddd;
   display: flex;
+}
+.news a{
+color: #333;
 }
 .news div{
   width: 50%;
@@ -226,11 +231,17 @@ height: 30px;
   width: 50%;
   padding: 50px;
 }
+.works div a{
+color: #333;
+}
 /*samples*/
 .rates{
     height: 400px;
   display: flex;
-  background-color: #555;
+  background-color: #ddd;
+}
+.rates a{
+  color: #333;
 }
 .rates div{
   width: 50%;
@@ -238,11 +249,21 @@ height: 30px;
 }
 /*contact*/
 .contact{
-  width: 960px;
-  height: 300px;
+  /*width: 960px;*/
+  height: 270px;
   margin: 0 auto;
   text-align: center;
 }
+.contact h2{
+  color: #fff;
+  margin-top: 0;
+  }
+  .contact p{
+    margin-top: 0;
+  }
+    .contact a{
+      color: #333;
+  }
 .contact-box{
   width: 875px;
   height: 175px;
@@ -256,6 +277,7 @@ height: 30px;
   height: 46px;
   margin: 20px auto;
   border-radius: 2px;
+  background-color: #ffe7c4;
 }
 
 /*自己紹介ページ*/
@@ -264,7 +286,7 @@ height: 30px;
   line-height: 1.8;
 }
 .about-content-hs{
-  margin: 0 30px;
+  /*margin: 0 30px;*/
 }
 .about-main h2{
   padding: 10px 50px;
@@ -306,6 +328,7 @@ padding: 20px 0 0 30px;
 width: 60%;
 float: right;
 font-size: 0.9rem;
+line-height: 1.8;
 }
 .about-content-box-r hr{
   display:block;
@@ -344,12 +367,15 @@ font-size: 0.9rem;
   border-top-width: 5px;
   border-radius: 3px;
   float: left;
-  margin: 30px 20px 50px 0;
+  margin: 30px 30px 50px 0;
   text-align: center;
   padding-top: 10px;
   position: relative;
   color: #333;
   padding-left: 0;
+}
+.voice-box-las{
+margin-right: 0;
 }
 .voice-box-video{
   width: 100%;
@@ -368,16 +394,17 @@ font-size: 0.9rem;
   margin-bottom: 50px;
 }
 .mov-box{
-  width: 850px;
+  width: 894px;
   height: 300px;
   border: 1px solid #ff5252;
-  border-left-width: 5px;
+    border-left-width: 5px;
   border-radius: 5px;
   margin: 30px auto;
   position: relative;
 }
 .mov-box-video{
   position: absolute;
+  width: 50%;
   top: 10px;
   left: 425px;
 }
@@ -401,7 +428,7 @@ font-size: 1.25rem;
 }
 .ex-works{
   clear: both;
-  margin: 0 15px;
+  /*margin: 0 15px;*/
   font-size: 0.9rem;
 }
 .ex-works p::before{
@@ -420,20 +447,21 @@ h2+p{
     padding: 0 0 10px 50px;
 }
 .rates-table{
-    padding: 10px 0 10px 80px;
+    padding: 10px 0 5px 50px;
 }
 .rates-table p{
-    padding-left: 10px;
+    /*padding-left: 10px;*/
+    font-size: 0.8rem;
 }
 .rates-table h3{
-  margin-top: 10px;
+  margin-top: 30px;
   padding: 0 0 0 10px;
   border-left: solid 7px #f64233;
   border-radius: 20px;
 }
 table{
   border-collapse: collapse;
-  margin: 10px 0;
+  margin: 10px 0 2px 0;
   width: 70%;
   /*border: 1px solid #555;*/
   table-layout: fixed;
@@ -454,10 +482,12 @@ table caption{
   font-weight: bold;
 }
 .rates-caution{
-  width: 90%;
-  padding: 20px 0 20px 20px;
-  margin: 0 auto 30px auto;
+  padding: 20px 0 20px 50px;
+  margin: 50px auto 30px auto;
   background-color: #ffe7c4;
+}
+.rates-caution p{
+  font-size: 0.9rem;
 }
 /*お問い合わせ*/
 
@@ -470,7 +500,7 @@ table caption{
 }
 
 .form-box{
-  margin: 30px 50px;
+  margin: 30px 0;
 }
 
 form{
@@ -498,7 +528,6 @@ textarea{
 .pagetop{
 clear: both;
 }
-
 .pagetop a:hover{
   text-decoration: underline;
   color: #333;
@@ -539,7 +568,7 @@ footer .container{
 .shadow {
   box-shadow: 5px 10px 20px rgba(0,0,0,0.25);
 }
-/*レスポンシブ対応*/
+/*レスポンシブ対応 1/11時点で全然できてないよ(^ω^)！！*/
 @media screen and (max-width: 480px){
 .gl-header{
   height: 50px;
@@ -547,7 +576,7 @@ footer .container{
 .gl-nav{
 display: none;
 }
-.gl-title{
+.gl-title a{
   margin: 0 auto;
 }
 }
