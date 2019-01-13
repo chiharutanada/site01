@@ -1,0 +1,43 @@
+/*レスポンシブ対応 1/11時点で全然できてないよ(^ω^)！！*/
+@media screen and (max-width: 480px){
+    /*非表示にするもの*/
+.util-nav, .gl-nav, .breadcrumb, .gl-footer img{
+display: none;
+}
+/*画面サイズ狭く*/
+main, .contact-main, .form-box, .container{
+  width: 451px;
+  margin: 0 auto;
+}
+/*ヘッダー*/
+
+/*各ページタイトル*/
+.page-title{
+margin: 10px 10px 10px 10px;
+position: relative;
+color: #f64233;
+}
+.page-title:after {
+content: "";
+display: block;
+height: 4px;
+background: linear-gradient(to right, rgb(246, 72, 57), transparent);
+}
+.page-title h2{
+font-size: 24px;
+margin: 0;
+padding: 10px 20px 10px 3px;
+}
+.page-title+p{
+    padding: 5px 10px 5px 10px;
+}
+/*お問い合わせページ*/
+.contact-main{
+    margin: 0;
+    padding: 10px;
+}
+textarea{
+  width: 300px;
+  height: 200px;
+}
+}

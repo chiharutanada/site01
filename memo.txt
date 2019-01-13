@@ -5,7 +5,7 @@ https://www.nxworld.net/tips/css-hover-underline-animation-examples-and-sass-mix
 
 ■カラー参考
 オレンジ系
-☆#f64233	グローバルナビhover時のライン
+☆#f64233	グローバルナビhover時のライン  246 72 57
 #f85658(RGB:246 86 88)	Googleフォントのオレンジ(ちなみにGoogleフォントの背景は#222)
 #ffe7c4	ベージュ　テーブルに登場
 #ff5252  濃いオレンジっぽい？

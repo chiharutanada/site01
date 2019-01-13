@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>テスト用です！</title>
+  <meta name="keywords" content="キーワード">
+  <meta name="description" content="サイトの説明です">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- ファビコン -->
+  <link rel="icon" href="fabicon.jpg" type="image/jpg">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/sanitize.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+  <script>
+    $(function(){
+    //.accordion1の中のp要素がクリックされたら
+  $('.accordion1 p').click(function(){
+    //クリックされた.accordion1の中のp要素に隣接するul要素が開いたり閉じたりする。
+    $(this).next('ul').slideToggle();
+  });
+});
+  </script>
+</head>
+<body>
+  <!-- アコーディオン -->
+<div class="accbox">
+  <!--ラベル1-->
+    <input type="checkbox" id="label1" class="cssacc" />
+    <label for="label1">HTML&CSS</label>
+    <div class="accshow">
+ここに隠す中身
+    </div>
+    <!--//ラベル1-->
+  <!--ラベル2-->
+    <input type="checkbox" id="label2" class="cssacc" />
+    <label for="label2">Photoshop</label>
+    <div class="accshow">
+      ここに隠す中身
+    </div>
+    <!--//ラベル2-->
+  <!--ラベル3-->
+    <input type="checkbox" id="label3" class="cssacc" />
+    <label for="label3">WordPress</label>
+    <div class="accshow">
+      ここに隠す中身
+    </div>
+    <!--//ラベル3-->
+  <!--ラベル4-->
+    <input type="checkbox" id="label4" class="cssacc" />
+    <label for="label4">Material Design</label>
+    <div class="accshow">
+      ここに隠す中身
+    </div>
+    <!--//ラベル4-->
+  <!--ラベル5-->
+    <input type="checkbox" id="label5" class="cssacc" />
+    <label for="label5">Design Tips</label>
+    <div class="accshow">
+      ここに隠す中身
+    </div>
+    <!--//ラベル5-->
+</div><!--//.accbox-->
+</body>
+</html>

@@ -7,14 +7,52 @@
   <meta name="description" content="翻訳･通訳･ビデオ制作・日本語ナレーターとして活動中、ラッセル・グドール(Russell Goodall)のWebサイトです。">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- ファビコン -->
-  <link rel="icon" href="images/favicon.png" type="image/png">
-<!--   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> -->
+  <link rel="icon" href="images/favicon_01.png" type="image/png">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/sanitize.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+  <script>
+$(function() {
+  var TopBtn = $('.page_top');
+  var BottomPos = 10; // ボタンの画面下からの位置を指定
+  TopBtn.hide();
+  $(window).scroll(function(e) {
+    $window = $(e.currentTarget);
+    WindowHeight = $window.height(); // ウィンドウの高さ
+    PageHeight = $(document).height(); // ページの高さ
+    footerHeight = $(".gl-footer").height(); // フッタの高さ
+    ScrollTop = $window.scrollTop(); // スクロールした量
+    MoveTopBtn = WindowHeight + ScrollTop + footerHeight - PageHeight;
+
+    //スクロール位置が100でボタンを表示
+    if ($(this).scrollTop() > 100) {
+      TopBtn.fadeIn();
+    }
+    else {
+      TopBtn.fadeOut();
+    }
+    // フッターまでスクロールするとボタンを移動
+    if(ScrollTop >= PageHeight - WindowHeight - footerHeight + BottomPos) {
+      TopBtn.css({ bottom: MoveTopBtn });
+    }
+    else {
+      TopBtn.css({ bottom: BottomPos });
+    }
+  });
+  //ボタンを押下するとトップへ移動
+  TopBtn.click(function() {
+    $('body,html').animate({
+      scrollTop: 0
+    }, 300);
+    return false;
+  });
+});
+  </script>
 </head>
 <body id="top">
+
   <header class="gl-header">
     <div class="container">
         <h1 class="gl-title"><a href="index.html">Russel Goodall通訳</a></h1>
@@ -25,7 +63,7 @@
             </ul>
             <a href="https://www.facebook.com/RussellGoodallInterpreter" class="facebook">facebook</a>
         </div>
-    </div>
+
     <nav class="gl-nav">
       <div class="nav-container">
         <ul>
@@ -37,69 +75,87 @@
         </ul>
       </div>
     </nav>
+        </div>
   </header>
-  <main>
-    <section class="hero"><h2>Russell<br>Goodall</h2></section>
-    <section class="hero-sub"><h2>Welcome to the website of Russell Goodall</h2><p>ラッセル・グドールのウエブサイトへようこそ！<br>通訳/翻訳/ナレーターを中心にフリーで活動中</p></section>
-    <section class="about">
-      <div>
-        <h2>About</h2>
-      <p>両親はニュージーランド人、生後まもなく来日し小・中・高を北海道で生活。<br>親とは英語、兄弟や友達とは日本語という変わった言語生活を体験。<br>神と親から恵まれた言語の才能と持ち前のユーモアのセンスを活かして活動。<br>「メッセージを相手にきちんと伝える」事を大事にし、「味のある通訳」をこころがけている。<br><a href="about.html">詳細はこちら→</a><br></p>
-      </div>
-      <div><img src="images/photo_01.png" alt="自己紹介">
+    <section class="hero">
+        <div class="hero-img">
+        </div>
+      </section>
+    <section class="hero-sub">
+      <div section class="hero-sub-box"><h2>Welcome to the website of Russell Goodall</h2><p>ラッセル・グドールのウエブサイトへようこそ！<br>通訳/翻訳/ナレーターを中心にフリーで活動中</p>
       </div>
     </section>
-    <section class="news">
-      <div>
+    <section class="about">
+      <div class="about-box">
+      <div class="about-box-l">
+        <h2>ラッセル・グドールとは...</h2>
+        <p>◆両親はニュージーランド人、生後まもなく来日し小・中・高を北海道で生活<br>◆親とは英語、兄弟や友達とは日本語という変わった言語生活を体験<br>◆神と親から恵まれた言語の才能と持ち前のユーモアのセンスを活かして活動<br>
+      <p><span>「メッセージを相手にきちんと伝える」事を大事にし、<br>「味のある通訳」を心がけている。</span></p>
+        <p><a href="about.html">詳細はこちら→</a><br></p>
+      </div>
+      <div class="about-box-r"><img src="images/photo_01.png" alt="自己紹介">
+      </div>
+      </div>
+    </section>
+
+<!--     <section class="news">
+      <div class="news-box">
+      <div class="news-box-l">
        <img src="images/photo_02.png" alt="ex">
       </div>
-      <div>
-      <h2>News</h2>
+      <div class="news-box-r">
+      <h2>新着情報</h2>
         <dl>
         <dt>2018年12月03日</dt>
         <dd>ラジオのゲスト</dd>
         <dt>2018年12月24日</dt>
         <dd>イベントのMC</dd>
+         <dt>2018年12月24日</dt>
+        <dd>イベントのMC</dd>
       </dl>
       <p><a href="news.html">詳細はこちら→</a></p>
     </div>
-    </section>
+  </div>
+    </section> -->
 
     <section class="works">
-      <div>
-        <h2>works</h2>
-      <p>ビジネスマン、ロック・スター、トップスポーツ選手、牧師から首相まで、実に様々な方の通訳を担当。<br><a href="experience.html">詳細はこちら→</a>
+      <div class="works-box">
+        <div class="works-box-l">
+        <h2>実績・音声サンプル</h2>
+      <p>ビジネスマン、ロック・スター、トップスポーツ選手、牧師から首相まで、実に様々な方の通訳を担当。<br><a href="experience.html">詳細はこちら→</a></p>
       </div>
-      <div><img src="images/photo_02.png" alt="ex">
+      <div class="works-box-r"><img src="images/photo_02.png" alt="ex">
       </div>
+    </div>
     </section>
 
         <section class="rates">
-      <div><img src="images/photo_02.png" alt="rates">
+          <div class="rates-box">
+      <div class="rates-box-l"><img src="images/photo_02.png" alt="rates">
       </div>
-      <div>
-        <h2>Rates</h2>
+      <div class="rates-box-r">
+        <h2>料金</h2>
       <p>英日両方のナレーション業務、関連する台本等の翻訳<br>オリジナル台本～ナレーションまでを含むサービスを提供<br>
     <a href="rates.html">詳細はこちら→</a></p>
       </div>
+    </div>
     </section>
-
     <section class="contact">
       <section class="contact-box">
         <h2>contact</h2>
         <p>お仕事のご依頼、お見積り、質問などお気軽にお問い合わせください。</p>
-        <p class="contact-button"><a href="contact.html">こちら→</a></p>
+        <div class="contact-button"><a href="contact.html">こちら→</a></div>
       </section>
     </section>
-    <p class="pagetop"><a href="#top">Topへ戻る</a></p>
+    <main>
+    <div class="page_top"><a href="#top"></a></div>
   </main>
   <footer class="gl-footer">
-    <div class="container">
-    <div class="darth"></div>
+    <div class="footer-container">
     <small>
-    <p class="fot-logo"><img src="images/fot-logo.png" alt="fot-logo" width="170px"></p>
     <p class="foot">ラッセル・グドール通訳<br>Tel.090-5335-6482<br>Mail.russell@goodall.jp<br>skype.russellgoodall</p>
     <p class="copy">&copy;Russel Goodall All rights reserved</p>
+    <p class="fot-logo" class="footer-logo"><img src="images/logo-footer_r.png" alt="fot-logo"></p>
   </small>
   </div>
   </footer>
