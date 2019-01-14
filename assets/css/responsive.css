@@ -1,22 +1,39 @@
 /*レスポンシブ対応 1/11時点で全然できてないよ(^ω^)！！*/
+@media screen and (min-width: 480px){
+.accbox{
+  display: none;
+}
+}
 @media screen and (max-width: 480px){
 html{
 background-color: #fff;
 }
 body{
-    width: 100vw;
+    /*width: 100vw;*/
   color: #333;
   font-size: 12px;
   text-size-adjust: 100%;
 }
 h2{
+    width: 100vw;
     font-size: 16px;
+    margin-left: 0;
 }
 h3{
+    width: 100vw;
     font-size: 15px;
+}
+p{
+        width: 100vw;
+    padding: 0;
+    margin: 0;
+}
+.view{
+        width: 100vw;
 }
 .gl-header, .gl-footer{
     /*width: 100%;*/
+        width: 100vw;
     padding-left: 10px;
 }
     /*非表示にするもの*/
@@ -24,12 +41,19 @@ h3{
 display: none;
 }
 /*画面サイズ狭く*/
-main, .contact-main, .form-box, .rates-main{
-  max-width: 451px;
+main{
+    width: 100vw;
   margin: 0 0 0 10px;
+}
+main, .contact-main, .form-box, .rates-main{
+  /*max-width: 451px;*/
 }
 /*ヘッダー*/
 
+/*ふっだー*/
+.fot-logo{
+    display: none;
+}
 /*各ページタイトル*/
 .page-title{
 margin: 10px 10px 10px 10px;
@@ -59,28 +83,41 @@ textarea{
   width: 300px;
   height: 200px;
 }
+.view p{
+padding: 10px;
+padding-right: 30px;
+}
 /*料金ページ*/
 .rates-table, .rates-caution{
     padding-left: 0;
+    width: 100vw;
+}
+.rates-table p, .rates-caution p{
+padding: 0 30px 0 10px;
 }
 .rates-main h2{
 width: 80%;
 }
 .rates-main p{
-width: 350px;
+/*width: 350px;*/
+    width: 100vw;
+}
+.rates-main table{
+    width: 90vw;
 }
 .rates-caution{
-    widows: 100%;
+    background-color: #fff;
+    margin: 0;
 }
 /*自己紹介ページ*/
 .about-content{
-    width: 350px;
+    /*width: 350px;*/
+ width: 100vw;
     margin: 0;
-    padding: 0;
+    padding: 10px 10px 10px 0;
 }
 .my-photo, .my-text{
     float: none;
-    padding-left: 10px;
     width: 350px;
 }
 .my-photo{
@@ -92,9 +129,11 @@ width: 350px;
     display: none;
 }
 .about-content-hs{
-    padding-bottom: 20px;
-    margin-bottom: 20px;
     border-bottom: 1px dotted #ddd;
+}
+.about-content-hs p{
+    padding: 10px;
+    margin-bottom: 0;
 }
 .about-content-sub{
     margin: 0;
@@ -111,10 +150,89 @@ width: 350px;
     display: none;
 }
 /*トップページ*/
-.hero, .hero-sub, .about, .rates, .contact{
+.main{
+    width: 100vw;
+}
+/*.hero, .hero-sub, ,.hero-sub-box, .about, .about-box, .about-box-l, .rates, .contact, .hero-img{
+    width: 100vw;
+}
+.about-box, .about-box-l{
+   width: 320px;
+}*/
+/*アコーディオンメニュー*/
+.accbox {
+    width: 100vw
     margin: 0;
     padding: 0;
-    float: none;
+    font-size: 14px;
+    /*max-width: 400px;/*最大幅*/*/
+}
+.accbox a{
+    display: block;
+    color: #000;
+    padding: 15px;
+}
+.accbox a:hover{
+    color: #f64233;
+}
+/*ラベル*/
+.accbox label {
+    display: block;
+    margin: 1.5px 0;
+    padding : 13px 12px;
+    color: #fff;
+    font-weight: bold;
+    background: #444;
+    cursor :pointer;
+    transition: all 0.5s;
+}
+.accbox ul li{
+    /*margin: 10px;*/
+    border-bottom: 1px dotted #fff;
+}
+.accbox input{
+    margin: 0;
+    padding: 0;
+}
+/*アイコンを表示*/
+.accbox label:before {
+    content: '\f054';
+    font-family: 'FontAwesome';
+    padding-right: 8px;
+}
 
+/*ラベルホバー時*/
+.accbox label:hover {
+    background :#444;
+}
+
+/*チェックは隠す*/
+.accbox input {
+    display: none;
+}
+
+/*中身を非表示にしておく*/
+.accbox .accshow {
+    height: 0;
+    padding: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: 0.8s;
+}
+
+/*クリックで中身表示*/
+.cssacc:checked + label + .accshow {
+    height: auto;
+    padding: 5px;
+    background: #ddd;
+    opacity: 1;
+}
+
+.accbox .accshow p {
+    margin: 15px 10px}
+
+/*アイコンを入れ替える*/
+.cssacc:checked + label:before {
+    content: '\f078';
 }
 }

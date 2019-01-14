@@ -34,6 +34,7 @@ main{
   margin: 0 auto;
   padding: 0;
 }
+
 a{
   text-decoration: none;
 }
@@ -223,7 +224,7 @@ padding: 0;
    height: 100%;
     margin: 0 auto;
     padding: 60px 50px;
-    background: url(../images/photo_01.png) 700px 100px no-repeat;
+    background: url(../images/photo_01.png) 680px 100px no-repeat;
 }
 .about-box h2{
   margin: 0 0 20px 0;
@@ -734,4 +735,7 @@ textarea{
 /*その他*/
 .shadow {
   box-shadow: 5px 10px 20px rgba(0,0,0,0.25);
+}
+.viewtest{
+  background-color: #ff0000;
 }
