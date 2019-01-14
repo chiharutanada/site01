@@ -1,6 +1,6 @@
 /*レスポンシブ対応 1/11時点で全然できてないよ(^ω^)！！*/
 @media screen and (min-width: 480px){
-.accbox{
+.accbox, .rates-s{
   display: none;
 }
 }
@@ -37,7 +37,7 @@ p{
     padding-left: 10px;
 }
     /*非表示にするもの*/
-.util-nav, .gl-nav, .breadcrumb, .gl-footer img{
+.util-nav, .gl-nav, .breadcrumb, .gl-footer img ,.rates{
 display: none;
 }
 /*画面サイズ狭く*/
@@ -51,6 +51,9 @@ main, .contact-main, .form-box, .rates-main{
 /*ヘッダー*/
 
 /*ふっだー*/
+.gl-footer{
+    font-size: 14px;
+}
 .fot-logo{
     display: none;
 }
@@ -153,12 +156,110 @@ width: 80%;
 .main{
     width: 100vw;
 }
-/*.hero, .hero-sub, ,.hero-sub-box, .about, .about-box, .about-box-l, .rates, .contact, .hero-img{
+.hero{
+    width: 100vw;
+    height: 180px;
+}
+  .hero-img{
+    width: 100vw;
+  background: url(../images/hero_img_s.png) 0 0 no-repeat;
+  }
+.hero-sub, .hero-sub-box{
+    margin-top: 30px;
+    width: 100vw;
+    height: 230px;
+}
+.about{
+    height: 400px;
+
+}
+.about-box{
+    width: 100vw;
+padding: 10px;
+margin: 30px 0;
+}
+.about-box h2{
+        width: 90vw;
+    font-size: 20px;
+    }
+.about-box p{
+        width: 90vw;
+    font-size: 15px;
+    /*padding-right: 30px;*/
+}
+.more-s{
+    margin-top: 20px;
+}
+
+.rates-s{
+        width: 100vw;
+      background-color: #ddd;
+      font-size: 18px;
+      line-height: 1.8;
+      padding: 10px;
+      margin: 20px 0;
+}
+.rates-s h2{
+  margin: 0 0 20px 0;
+  padding: 0;
+}
+.rates-s a{
+  color: #333;
+}
+.rates-box-l-s{
+  border-bottom: 3px dotted #fff;
+  padding: 30px 10px;
+  margin-bottom: 20px;
+}
+.rates-box-l-s h2, .rates-box-r-s h2{
+  /* background-color: #888; */
+  color: #666;
+  padding: 10px 5px;
+/*border-top: 5px solid #666;*/
+border-bottom: 5px solid #fff;
+}
+
+
+.rates-s, .rates-box-l-s, .rates-box-r-s, .contact{
     width: 100vw;
 }
-.about-box, .about-box-l{
-   width: 320px;
-}*/
+.rates-box-l-s, .rates-box-r-s{
+    width: 100vw;
+    height: 250px;
+    padding: 0;
+float: none;
+}
+.rates-box-l-s h2, .rates-box-r-s h2{
+        width: 90vw;
+    font-size: 20px;
+    }
+.rates-box-l-s p, .rates-box-r-s p{
+        width: 90vw;
+    font-size: 15px;
+    padding: 10px;
+}
+.contact-box{
+    width: 90vw;
+}
+ .contact-box h2{
+        width: 90vw;
+    padding: 10px;
+    font-size: 20px;
+        }
+.contact-box p{
+    width: 90vw;
+    padding: 10px;
+    font-size: 15px;
+    margin: 0;
+}
+ /*実績*/
+.ex-main{
+        width: 10vw;
+    padding: 10px;
+}
+.voice-box, .ex-works-txt{
+        width: 90vw;
+}
 /*アコーディオンメニュー*/
 .accbox {
     width: 100vw

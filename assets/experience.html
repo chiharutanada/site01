@@ -13,8 +13,46 @@
   <link rel="stylesheet" href="css/style.css">
   <!-- <link rel="stylesheet" href="css/sanitize.css"> -->
     <link rel="stylesheet" href="css/responsive.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+  <script>
+$(function() {
+  var TopBtn = $('.page_top');
+  var BottomPos = 10; // ボタンの画面下からの位置を指定
+  TopBtn.hide();
+  $(window).scroll(function(e) {
+    $window = $(e.currentTarget);
+    WindowHeight = $window.height(); // ウィンドウの高さ
+    PageHeight = $(document).height(); // ページの高さ
+    footerHeight = $(".gl-footer").height(); // フッタの高さ
+    ScrollTop = $window.scrollTop(); // スクロールした量
+    MoveTopBtn = WindowHeight + ScrollTop + footerHeight - PageHeight;
+
+    //スクロール位置が100でボタンを表示
+    if ($(this).scrollTop() > 100) {
+      TopBtn.fadeIn();
+    }
+    else {
+      TopBtn.fadeOut();
+    }
+    // フッターまでスクロールするとボタンを移動
+    // if(ScrollTop >= PageHeight - WindowHeight - footerHeight + BottomPos) {
+    //   TopBtn.css({ bottom: MoveTopBtn });
+    // }
+    // else {
+    //   TopBtn.css({ bottom: BottomPos });
+    // }
+  });
+  //ボタンを押下するとトップへ移動
+  TopBtn.click(function() {
+    $('body,html').animate({
+      scrollTop: 0
+    }, 300);
+    return false;
+  });
+});
+  </script>
 </head>
-<body id="ex">
+<body id="top">
  <header class="gl-header">
     <div class="container">
         <h1 class="gl-title"><a href="index.html">Russel Goodall通訳</a></h1>
@@ -155,7 +193,7 @@ APEC 中小企業会議 (1999年・クライストチャーチ〜通訳)<br>
 ジェニー･シップリー（元ニュージーランド首相）<br>
 森喜朗（元日本国首相）<br>
 </div>
-      <p class="pagetop"><a href="#ex">Topへ戻る</a></p>
+    <div class="page_top"><a href="#top"></a></div>
       </section>
     </main>
   <footer class="gl-footer">
