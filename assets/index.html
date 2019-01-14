@@ -11,7 +11,8 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/sanitize.css">
+<!--   <link rel="stylesheet" href="css/sanitize.css"> -->
+     <link rel="stylesheet" href="css/responsive.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
   <script>
 $(function() {
@@ -34,12 +35,12 @@ $(function() {
       TopBtn.fadeOut();
     }
     // フッターまでスクロールするとボタンを移動
-    if(ScrollTop >= PageHeight - WindowHeight - footerHeight + BottomPos) {
-      TopBtn.css({ bottom: MoveTopBtn });
-    }
-    else {
-      TopBtn.css({ bottom: BottomPos });
-    }
+    // if(ScrollTop >= PageHeight - WindowHeight - footerHeight + BottomPos) {
+    //   TopBtn.css({ bottom: MoveTopBtn });
+    // }
+    // else {
+    //   TopBtn.css({ bottom: BottomPos });
+    // }
   });
   //ボタンを押下するとトップへ移動
   TopBtn.click(function() {
@@ -77,85 +78,69 @@ $(function() {
     </nav>
         </div>
   </header>
+
     <section class="hero">
         <div class="hero-img">
         </div>
       </section>
     <section class="hero-sub">
-      <div section class="hero-sub-box"><h2>Welcome to the website of Russell Goodall</h2><p>ラッセル・グドールのウエブサイトへようこそ！<br>通訳/翻訳/ナレーターを中心にフリーで活動中</p>
+      <div section class="hero-sub-box"><h2>Welcome to the website of Russell Goodall!</h2><p>ラッセル・グドールのウエブサイトへようこそ！<br>通訳/翻訳/ナレーターを中心にフリーで活動中</p>
       </div>
     </section>
     <section class="about">
       <div class="about-box">
       <div class="about-box-l">
         <h2>ラッセル・グドールとは...</h2>
-        <p>◆両親はニュージーランド人、生後まもなく来日し小・中・高を北海道で生活<br>◆親とは英語、兄弟や友達とは日本語という変わった言語生活を体験<br>◆神と親から恵まれた言語の才能と持ち前のユーモアのセンスを活かして活動<br>
+        <p>＊両親はニュージーランド人、自身は小・中・高を北海道で生活<br>＊親とは英語、兄弟や友達とは日本語という変わった言語生活を体験<br>＊神と親から恵まれた言語の才能と持ち前のユーモアのセンスを持つ<br>
       <p><span>「メッセージを相手にきちんと伝える」事を大事にし、<br>「味のある通訳」を心がけている。</span></p>
-        <p><a href="about.html">詳細はこちら→</a><br></p>
+      <button type="submit" class="btn btn-default more"><a href="about.html">＞READMORE</a></button>
       </div>
-      <div class="about-box-r"><img src="images/photo_01.png" alt="自己紹介">
+      <!-- <div class="about-box-r"><img src="images/photo_01.png" alt="自己紹介"> -->
       </div>
       </div>
     </section>
-
-<!--     <section class="news">
-      <div class="news-box">
-      <div class="news-box-l">
-       <img src="images/photo_02.png" alt="ex">
-      </div>
-      <div class="news-box-r">
-      <h2>新着情報</h2>
-        <dl>
-        <dt>2018年12月03日</dt>
-        <dd>ラジオのゲスト</dd>
-        <dt>2018年12月24日</dt>
-        <dd>イベントのMC</dd>
-         <dt>2018年12月24日</dt>
-        <dd>イベントのMC</dd>
-      </dl>
-      <p><a href="news.html">詳細はこちら→</a></p>
-    </div>
-  </div>
-    </section> -->
-
-    <section class="works">
+<!--     <section class="works">
       <div class="works-box">
         <div class="works-box-l">
         <h2>実績・音声サンプル</h2>
-      <p>ビジネスマン、ロック・スター、トップスポーツ選手、牧師から首相まで、実に様々な方の通訳を担当。<br><a href="experience.html">詳細はこちら→</a></p>
+      <p>ビジネスマン、ロック・スター、トップスポーツ選手、牧師から首相まで、実に様々な方の通訳を担当。<br>
+       <button type="submit" class="btn btn-default"><a href="experience.html">詳細はこちら</a></button>
       </div>
       <div class="works-box-r"><img src="images/photo_02.png" alt="ex">
       </div>
     </div>
-    </section>
+    </section> -->
 
         <section class="rates">
           <div class="rates-box">
-      <div class="rates-box-l"><img src="images/photo_02.png" alt="rates">
+      <div class="rates-box-l">
+      <h2>実績・音声サンプル</h2>
+      <p>ビジネスマン、ロック・スター、トップスポーツ選手、牧師から首相まで、実に様々な方の通訳を担当。<br></p>
+       <button type="submit" class="btn btn-default more"><a href="experience.html">＞READMORE</a></button>
       </div>
       <div class="rates-box-r">
         <h2>料金</h2>
-      <p>英日両方のナレーション業務、関連する台本等の翻訳<br>オリジナル台本～ナレーションまでを含むサービスを提供<br>
-    <a href="rates.html">詳細はこちら→</a></p>
+      <p>英日両方のナレーション業務、関連する台本等の翻訳、オリジナル台本～ナレーションまでを含むサービスを提供<br></p>
+        <button type="submit" class="btn btn-default more"><a href="rates.html">＞READMORE</a></button>
       </div>
     </div>
     </section>
     <section class="contact">
       <section class="contact-box">
-        <h2>contact</h2>
+        <h2>お問い合わせ</h2>
         <p>お仕事のご依頼、お見積り、質問などお気軽にお問い合わせください。</p>
-        <div class="contact-button"><a href="contact.html">こちら→</a></div>
+        <div class="contact-button"><a href="contact.html">＞READMORE</a></div>
       </section>
     </section>
-    <main>
+      <main>
     <div class="page_top"><a href="#top"></a></div>
   </main>
   <footer class="gl-footer">
     <div class="footer-container">
     <small>
-    <p class="foot">ラッセル・グドール通訳<br>Tel.090-5335-6482<br>Mail.russell@goodall.jp<br>skype.russellgoodall</p>
-    <p class="copy">&copy;Russel Goodall All rights reserved</p>
-    <p class="fot-logo" class="footer-logo"><img src="images/logo-footer_r.png" alt="fot-logo"></p>
+    <p class="foot">ラッセル・グドール通訳<br>Tel.090-5335-6482<br>Mail.russell@goodall.jp<br>skype.russellgoodall<br>&copy;Russel Goodall All rights reserved</p>
+    <!-- <p class="copy">&copy;Russel Goodall All rights reserved</p> -->
+    <p class="fot-logo"><!-- <img src="images/logo-footer_r.png" alt="fot-logo"> --></p>
   </small>
   </div>
   </footer>

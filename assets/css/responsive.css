@@ -1,13 +1,32 @@
 /*レスポンシブ対応 1/11時点で全然できてないよ(^ω^)！！*/
 @media screen and (max-width: 480px){
+html{
+background-color: #fff;
+}
+body{
+    width: 100vw;
+  color: #333;
+  font-size: 12px;
+  text-size-adjust: 100%;
+}
+h2{
+    font-size: 16px;
+}
+h3{
+    font-size: 15px;
+}
+.gl-header, .gl-footer{
+    /*width: 100%;*/
+    padding-left: 10px;
+}
     /*非表示にするもの*/
 .util-nav, .gl-nav, .breadcrumb, .gl-footer img{
 display: none;
 }
 /*画面サイズ狭く*/
-main, .contact-main, .form-box, .container{
-  width: 451px;
-  margin: 0 auto;
+main, .contact-main, .form-box, .rates-main{
+  max-width: 451px;
+  margin: 0 0 0 10px;
 }
 /*ヘッダー*/
 
@@ -39,5 +58,63 @@ padding: 10px 20px 10px 3px;
 textarea{
   width: 300px;
   height: 200px;
+}
+/*料金ページ*/
+.rates-table, .rates-caution{
+    padding-left: 0;
+}
+.rates-main h2{
+width: 80%;
+}
+.rates-main p{
+width: 350px;
+}
+.rates-caution{
+    widows: 100%;
+}
+/*自己紹介ページ*/
+.about-content{
+    width: 350px;
+    margin: 0;
+    padding: 0;
+}
+.my-photo, .my-text{
+    float: none;
+    padding-left: 10px;
+    width: 350px;
+}
+.my-photo{
+        float: none;
+    padding-left: 10px;
+    margin: 0;
+}
+.my-photo img{
+    display: none;
+}
+.about-content-hs{
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    border-bottom: 1px dotted #ddd;
+}
+.about-content-sub{
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+.about-content-box-l, .about-content-box-r{
+        float: none;
+        margin: 0;
+        padding: 0;
+        width: 350px;
+}
+.about-content-box-l{
+    display: none;
+}
+/*トップページ*/
+.hero, .hero-sub, .about, .rates, .contact{
+    margin: 0;
+    padding: 0;
+    float: none;
+
 }
 }

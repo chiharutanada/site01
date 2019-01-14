@@ -11,9 +11,49 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/sanitize.css">
+  <!-- <link rel="stylesheet" href="css/sanitize.css"> -->
+    <link rel="stylesheet" href="css/responsive.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+  <script>
+$(function() {
+  var TopBtn = $('.page_top');
+  var BottomPos = 10; // ボタンの画面下からの位置を指定
+  TopBtn.hide();
+  $(window).scroll(function(e) {
+    $window = $(e.currentTarget);
+    WindowHeight = $window.height(); // ウィンドウの高さ
+    PageHeight = $(document).height(); // ページの高さ
+    footerHeight = $(".gl-footer").height(); // フッタの高さ
+    ScrollTop = $window.scrollTop(); // スクロールした量
+    MoveTopBtn = WindowHeight + ScrollTop + footerHeight - PageHeight;
+
+    //スクロール位置が100でボタンを表示
+    if ($(this).scrollTop() > 100) {
+      TopBtn.fadeIn();
+    }
+    else {
+      TopBtn.fadeOut();
+    }
+    // フッターまでスクロールするとボタンを移動
+    // if(ScrollTop >= PageHeight - WindowHeight - footerHeight + BottomPos) {
+    //   TopBtn.css({ bottom: MoveTopBtn });
+    // }
+    // else {
+    //   TopBtn.css({ bottom: BottomPos });
+    // }
+  });
+  //ボタンを押下するとトップへ移動
+  TopBtn.click(function() {
+    $('body,html').animate({
+      scrollTop: 0
+    }, 300);
+    return false;
+  });
+});
+  </script>
+
 </head>
-<body id="about">
+<body id="top">
  <header class="gl-header">
     <div class="container">
         <h1 class="gl-title"><a href="index.html">Russel Goodall通訳</a></h1>
@@ -54,7 +94,7 @@
       <section class="about-content about-content-my">
       <div class="my-text">
       <p>ラッセル・グドール(Russell Goodall)<br>翻訳･通訳･ビデオ制作・日本語ナレーターとして活動中。</p>
-      <p>ニュージーランド生まれ、北海道育ち！<br>両親はニュージーランド人のバイリンガルです。</p>
+      <p>ニュージーランド生まれ、北海道育ち！<br>両親はニュージーランド人のバイリンガル。<br>現在は日本人の妻と二人の息子と共に横浜市に在住。</p>
       <p>「メッセージを相手にきちんと伝える」事の大事さ(通訳の神髄)を<br>改めて実感し、「味のある通訳」を心がけています！</p>
       </div>
       <div class="my-photo">
@@ -76,34 +116,31 @@
     </section>
       <section class="about-content-sub">
         <div class="about-content-box-l">
-          <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FRussellGoodallInterpreter&tabs=timeline&width=340&height=550&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="340" height="550" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media" class="shadow"></iframe>
+          <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FRussellGoodallInterpreter&tabs=timeline&width=340&height=550&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="340" height="500" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
         </div>
                 <div class="about-content-box-r">
         <p>▼ニュージーランドでの活動<br>
 1999年に世界初の「男はつらいよ」の英語劇がオークランドで上演され、ラッセルは制作全般に関わった他に、なんと主役の寅さん役を演じた。この舞台劇は「男はつらいよ」の映画第1作を舞台化したもので、台詞は90％以上が英語、但し寅さんの啖呵売や口上などは日本語というもので、ラッセルのバイリンガルの才能とキャラクターに目をつけた演出家がラッセルを起用した。山田洋二監督の激励もうけた、ユニークなものとなり、地元ニュージーランドのメディアでも一部とりあげられた。<br></p>
 <hr>
 <p>▼日本での活動<br>
-2001年10月<br>
-渋谷の街頭テレビ局「シブヤテレビジョン」の開局に際し活動の場を数年ぶりに日本に移す。シブヤテレビジョンではプロデューサーとして、また時には番組のナレーターや通訳としても活動。<br>
-2001年12月<br>
-中野サンプラザで行われた第2回ゴスペルクワイヤーフェスティバルでは司会を努める。主催者兼ゲストであるゴスペルシンガー小坂忠の友人であり、クリスチャンでもあるラッセルはこのゴスペルの祭典に喜んで手助けをした。<br>
-2005年5月<br>
-シブヤテレビジョン退社後、フリーとなる<br>
+2001年10月渋谷の街頭テレビ局「シブヤテレビジョン」の開局に際し活動の場を数年ぶりに日本に移す。シブヤテレビジョンではプロデューサーとして、また時には番組のナレーターや通訳としても活動。<br>
+2001年12月中野サンプラザで行われた第2回ゴスペルクワイヤーフェスティバルでは司会を努める。主催者兼ゲストであるゴスペルシンガー小坂忠の友人であり、クリスチャンでもあるラッセルはこのゴスペルの祭典に喜んで手助けをした。<br>
+2005年5月シブヤテレビジョン退社後、フリーとなる<br>
 </p>
 <hr>
-<p>
+<!-- <p>
 ▼現在<br>
 通訳/翻訳/ナレーターを中心に活動中。日本人の妻と二人の息子と共に横浜市に在住。日英バイリンガルな教会ニューホープ東京に通っており、ここでも神と親から恵まれた言語の才能と持ち前のユーモアのセンスを活かして牧師の通訳などをしている。<br>
-</p>
+</p> -->
 </div>
       </section>
     </section>
-        <p class="pagetop"><a href="#about">Topへ戻る</a></p>
+    <div class="page_top"><a href="#top"></a></div>
         </main>
   <footer class="gl-footer">
     <div class="container">
     <small>
-    <p class="fot-logo"><img src="images/fot-logo.png" alt="fot-logo" width="170px"></p>
+    <p class="fot-logo"></p>
     <p class="foot">ラッセル・グドール通訳<br>Tel.090-5335-6482<br>Mail.russell@goodall.jp<br>skype.russellgoodall</p>
     <p class="copy">&copy;Russel Goodall All rights reserved</p>
   </small>
