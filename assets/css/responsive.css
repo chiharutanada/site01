@@ -247,9 +247,14 @@ border-bottom: 5px solid #fff;
     padding: 0;
 float: none;
 }
+.rates-box-l-s{
+    border-bottom: 3px dotted #fff;
+}
 .rates-box-l-s h2, .rates-box-r-s h2{
         width: 90vw;
-    font-size: 20px;
+    font-size: 22px;
+    color: #333;
+    border-bottom: 2px solid #bbb;
     }
 .rates-box-l-s p, .rates-box-r-s p{
         width: 90vw;
@@ -270,6 +275,12 @@ float: none;
     font-size: 15px;
     margin: 0;
 }
+.contact-button{
+width: 180px;
+height: 40px;
+margin-top: 5px;
+}
+
  /*実績*/
 .ex-main{
         width: 10vw;
@@ -277,6 +288,9 @@ float: none;
 }
 .voice-box, .ex-works-txt{
         width: 90vw;
+}
+.voice-box p{
+    display: none;
 }
 /*アコーディオンメニュー*/
 .accbox {

@@ -453,7 +453,7 @@ line-height: 1.8;
     margin: 10px 0 10px 5px;
 }
 /*悩んでいる*/
-.voice-box{
+/*.voice-box{
   display: flex;
   width: 450px;
   height: 200px;
@@ -485,8 +485,25 @@ line-height: 1.8;
 }
 .voice-box-las{
   margin-bottom: 50px;
-}
+}*/
 /*悩んでいるおしまい*/
+.voice{
+  padding: 20px;
+  border: 1px solid #ddd;
+}
+.voice-mg{
+  margin-bottom: 50px;
+}
+.mov-pd{
+padding: 5px;
+}
+.video-size{
+width: 400px;
+height: 250px;
+}
+.mov-size{
+  width: 500px;
+}
 
 .ex-movie{
   clear: both;
@@ -507,7 +524,6 @@ line-height: 1.8;
   top: 10px;
   left: 425px;
 }
-
 .mov-box-txt{
   width: 50%;
   height: 100%;
@@ -616,6 +632,7 @@ table tr th{
   padding: 10px 10px;
   font-weight: normal;
   border: 1px solid #555;
+  text-align: center;
 }
 table tr td{
   padding: 5px 10px;
@@ -627,8 +644,9 @@ table caption{
   font-weight: bold;
 }
 .rates-caution{
-  padding: 20px 0 20px 50px;
-  margin: 50px auto 30px auto;
+  width: 70%;
+  padding: 5px 0 5px 10px;
+  margin: 50px auto 30px 40px;
   background-color: #ffe7c4;
 }
 
