@@ -14,6 +14,13 @@ body{
   font-size: 12px;
   text-size-adjust: 100%;
 }
+/*画像の設定*/
+img {
+display:block;
+max-width: 100%;
+height: auto;
+}
+
 h2{
     width: 100vw;
     font-size: 16px;
@@ -120,23 +127,30 @@ width: 80%;
     padding: 10px 10px 10px 0;
 }
 .my-photo, .my-text{
-    float: none;
-    width: 350px;
+    width: 100vw;
+}
+.about-content-my{
+    height: 320px;
+}
+.about-content-my h3{
+    padding-left: 10px;
+    font-size: 18px;
+    margin-top: 0;
 }
 .my-photo{
-        float: none;
-    padding-left: 10px;
-    margin: 0;
-}
-.my-photo img{
-    display: none;
+    height: 270px;
+    background: url(../images/photo_01.png) 50px -30px no-repeat;
 }
 .about-content-hs{
-    border-bottom: 1px dotted #ddd;
+    width: 100vw;
+    padding-bottom: 30px;
+    border-bottom: 1px dotted #999;
 }
-.about-content-hs p{
+.about-content-hs p, .my-text p{
     padding: 10px;
     margin-bottom: 0;
+    /*border-top: 1px dotted #ddd;*/
+padding: 0 30px 0 10px;
 }
 .about-content-sub{
     margin: 0;
@@ -149,6 +163,10 @@ width: 80%;
         padding: 0;
         width: 350px;
 }
+.about-content-box-r p{
+    font-size: 15px;
+padding: 0 30px 20px 10px;
+    }
 .about-content-box-l{
     display: none;
 }
