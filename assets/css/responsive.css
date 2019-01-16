@@ -6,10 +6,11 @@
 }
 @media screen and (max-width: 480px){
 html{
+        width: 100vw;
 background-color: #fff;
 }
 body{
-    /*width: 100vw;*/
+    width: 100%;
   color: #333;
   font-size: 12px;
   text-size-adjust: 100%;
@@ -22,27 +23,16 @@ height: auto;
 }
 
 h2{
-    width: 100vw;
+    width: 100%;
     font-size: 16px;
     margin-left: 0;
 }
 h3{
-    width: 100vw;
     font-size: 15px;
 }
-p{
-        width: 100vw;
-    padding: 0;
-    margin: 0;
-}
-.view{
-        width: 100vw;
-}
-.gl-header, .gl-footer{
-    /*width: 100%;*/
-        width: 100vw;
-    padding-left: 10px;
-}
+
+/*ヘッダーとフッダー*/
+
     /*非表示にするもの*/
 .util-nav, .gl-nav, .breadcrumb, .gl-footer img ,.rates{
 display: none;
@@ -50,10 +40,10 @@ display: none;
 /*画面サイズ狭く*/
 main{
     width: 100vw;
-  margin: 0 0 0 10px;
+  margin: 0;
 }
-main, .contact-main, .form-box, .rates-main{
-  /*max-width: 451px;*/
+.container{
+    width: 100vw;
 }
 /*ヘッダー*/
 
@@ -64,11 +54,15 @@ main, .contact-main, .form-box, .rates-main{
 .fot-logo{
     display: none;
 }
+.foot{
+    margin-left: 15px;
+}
 /*各ページタイトル*/
 .page-title{
-margin: 10px 10px 10px 10px;
-position: relative;
+margin: 0;
+padding: 0 15px;
 color: #f64233;
+position: relative;
 }
 .page-title:after {
 content: "";
@@ -79,7 +73,7 @@ background: linear-gradient(to right, rgb(246, 72, 57), transparent);
 .page-title h2{
 font-size: 24px;
 margin: 0;
-padding: 10px 20px 10px 3px;
+padding: 10px 0;
 }
 .page-title+p{
     padding: 5px 10px 5px 10px;
@@ -120,177 +114,181 @@ width: 80%;
     margin: 0;
 }
 /*自己紹介ページ*/
+.about-main{
+padding: 0 15px; /*画面両サイドの余白*/
+}
 .about-content{
-    /*width: 350px;*/
- width: 100vw;
     margin: 0;
-    padding: 10px 10px 10px 0;
-}
-.my-photo, .my-text{
-    width: 100vw;
-}
-.about-content-my{
-    height: 320px;
+    padding: 10px 0;
 }
 .about-content-my h3{
-    padding-left: 10px;
     font-size: 18px;
     margin-top: 0;
+}
+.my-text{
+    padding-bottom: 10px;
 }
 .my-photo{
     height: 270px;
     background: url(../images/photo_01.png) 50px -30px no-repeat;
 }
 .about-content-hs{
-    width: 100vw;
     padding-bottom: 30px;
     border-bottom: 1px dotted #999;
 }
 .about-content-hs p, .my-text p{
-    padding: 10px;
     margin-bottom: 0;
-    /*border-top: 1px dotted #ddd;*/
-padding: 0 30px 0 10px;
 }
 .about-content-sub{
     margin: 0;
     padding: 0;
     border: none;
 }
-.about-content-box-l, .about-content-box-r{
+.about-content-box-r{
         float: none;
+        width: 100%; /*floatの右側、styleCSSでwidth60%にしてる*/
         margin: 0;
         padding: 0;
-        width: 350px;
 }
 .about-content-box-r p{
     font-size: 15px;
-padding: 0 30px 20px 10px;
+    padding: 0;
     }
 .about-content-box-l{
     display: none;
 }
 /*トップページ*/
-.main{
-    width: 100vw;
+/*詳細こちらのボタン*/
+.more{
+    width: 90vw;
+  background-color: #fff;
+  padding: 10px;
 }
+    /*メインビジュアル＊トップページ*/
 .hero{
-    width: 100vw;
-    height: 180px;
+    height: 220px;
 }
   .hero-img{
-    width: 100vw;
+    width: 100%; /* よくわからんけど必要っぽい*/
+    height: 100%; /* よくわからんけど必要っぽい*/
   background: url(../images/hero_img_s.png) 0 0 no-repeat;
   }
-.hero-sub, .hero-sub-box{
-    margin-top: 30px;
-    width: 100vw;
-    height: 230px;
+    /*ようこそのところ＊トップページ*/
+.hero-sub{
+    height: 250px;
 }
+ .hero-sub-box{
+    width: 100%; /* よくわからんけど必要っぽい*/
+ }
+.hero-sub-box h2{
+font-size: 30px;
+padding-top: 45px;
+}
+.hero-sub-box p{
+    font-size: 14px;
+}
+    /*ラッセルとはなんぞや＊トップページ*/
 .about{
     height: 400px;
-
 }
 .about-box{
-    width: 100vw;
-padding: 10px;
-margin: 30px 0;
+    width: 100%;
+padding: 15px;
+margin-top: 30px;
+}
+.about-box-l{
+    height: 100%;
 }
 .about-box h2{
-        width: 90vw;
     font-size: 20px;
     }
 .about-box p{
-        width: 90vw;
     font-size: 15px;
-    /*padding-right: 30px;*/
+    padding: 0;
 }
-.more-s{
-    margin-top: 20px;
+    /*顔写真はさみたいけどうまくいかない*/
+.about-box-img{
+    float: none;
+    width: 100vw;
+    height: 300px;
+    background: url(../images/photo_01.png) 80px 0 no-repeat;
 }
-
+/*音声サンプルのところ＊トップページ*/
 .rates-s{
-        width: 100vw;
       background-color: #ddd;
       font-size: 18px;
       line-height: 1.8;
-      padding: 10px;
+      padding: 15px;
       margin: 20px 0;
 }
-.rates-s h2{
-  margin: 0 0 20px 0;
-  padding: 0;
-}
-.rates-s a{
+.rates-s a{ /*ボタンの文字色*/
   color: #333;
 }
+    /*実績・音声サンプル(上：rates-box-l-s、下：rates-box-r-s)*/
 .rates-box-l-s{
   border-bottom: 3px dotted #fff;
-  padding: 30px 10px;
-  margin-bottom: 20px;
-}
-.rates-box-l-s h2, .rates-box-r-s h2{
-  /* background-color: #888; */
-  color: #666;
-  padding: 10px 5px;
-/*border-top: 5px solid #666;*/
-border-bottom: 5px solid #fff;
-}
-
-
-.rates-s, .rates-box-l-s, .rates-box-r-s, .contact{
-    width: 100vw;
 }
 .rates-box-l-s, .rates-box-r-s{
-    width: 100vw;
     height: 250px;
-    padding: 0;
-float: none;
-}
-.rates-box-l-s{
-    border-bottom: 3px dotted #fff;
+    padding-top: 10px;
 }
 .rates-box-l-s h2, .rates-box-r-s h2{
-        width: 90vw;
+  color: #666;
+  margin: 0;
+  padding: 10px 0;
+    border-bottom: 5px solid #fff;
     font-size: 22px;
     color: #333;
     border-bottom: 2px solid #bbb;
-    }
+}
+
 .rates-box-l-s p, .rates-box-r-s p{
-        width: 90vw;
     font-size: 15px;
-    padding: 10px;
+    padding: 0;
+    margin-bottom: 20px;
+}
+
+.rates-box-l-s{
+    border-bottom: 3px dotted #fff;
+}
+.contact{
+
 }
 .contact-box{
-    width: 90vw;
+    width: 90vw; /*お問い合わせの枠*/
+    border: 1px solid #ffe7c4;
 }
  .contact-box h2{
-        width: 90vw;
+        /*width: 90vw;*/
     padding: 10px;
     font-size: 20px;
         }
 .contact-box p{
-    width: 90vw;
+    /*width: 90vw;*/
     padding: 10px;
     font-size: 15px;
     margin: 0;
 }
 .contact-button{
-width: 180px;
-height: 40px;
+    width: 40%;
+/*height: 40px;*/
 margin-top: 5px;
+background-color: #ffe7c4;
 }
 
  /*実績*/
 .ex-main{
-        width: 10vw;
-    padding: 10px;
+        width: 100vw;
+    padding: 0px;
 }
-.voice-box, .ex-works-txt{
-        width: 90vw;
+.ex-main h3{
+    text-align: left;
 }
-.voice-box p{
-    display: none;
+.voice{
+    padding: 0;
+}
+.video-size, .mov-size{
+width: 350px;
 }
 /*アコーディオンメニュー*/
 .accbox {

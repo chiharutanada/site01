@@ -25,11 +25,11 @@ h2{
   color: #ff5252;
 }
 main{
-  width: 1000px;
+  max-width: 1000px;
   margin: 0 auto;
 }
 .container{
-  width: 1000px;
+  max-width: 1000px;
   height: 90px;
   margin: 0 auto;
   padding: 0;
@@ -433,18 +433,17 @@ line-height: 1.8;
 .ex-main{
   padding: 20px 50px;
 }
+.ex-main h2{
+  /*padding-left: 0px;*/
+}
+
 .ex-main h3{
   text-align: center;
   border-bottom: 2px dotted #888;
   clear: both;
+  padding-bottom: 5px;
 }
-/*h3の装飾テスト*/
-.ex-main h2{
-  padding-left: 0px;
-}
-.ex-main h2+p{
-    padding: 0 10px 30px 0;
-}
+/*h3の装飾*/
 .ex-main h3:first-letter,.ex-movie h3:first-letter, .ex-works h3:first-letter{
   font-size: 1.6em;
 }
@@ -452,96 +451,51 @@ line-height: 1.8;
 .ex-main p{
     margin: 10px 0 10px 5px;
 }
-/*悩んでいる*/
-/*.voice-box{
-  display: flex;
-  width: 450px;
-  height: 200px;
-  border: 1px solid #ff5252;
-  border-top-width: 5px;
-  border-radius: 3px;
-  float: left;
-  margin: 10px 0px 10px 0;
-  text-align: center;
-  padding-top: 10px;
-  color: #333;
-  padding-left: 0;
+.voice-row, .mov-row{
+  padding: 10px 15px 30px 15px;
 }
-.voice-box p{
-  width:150px;
-}
-.voice-box-video{
-  width: 100%;
-  height: 60%;
-}
-.ex-voice video{
-  width: 250px;
-  height: 150px;
-  border: 1px solid #ddd;
-}
-.ex-voice{
-  height: 210px;
-  margin-bottom: 10px;
-}
-.voice-box-las{
-  margin-bottom: 50px;
-}*/
-/*悩んでいるおしまい*/
 .voice{
   padding: 20px;
   border: 1px solid #ddd;
 }
-.voice-mg{
-  margin-bottom: 50px;
-}
-.mov-pd{
-padding: 5px;
+.voice-title{
+  font-size: 18px;
+  font-weight: bold;
+/*装飾*/
+padding: 0.4em 0.5em;
+color: #494949;
+background: #f4f4f4;
+border-left: solid 5px #f64233;
+border-bottom: solid 3px #d7d7d7;
+margin-left: 0;
+padding-right: 0;
 }
 .video-size{
 width: 400px;
 height: 250px;
+padding-left: 5px;
+}
+.mov-row p{
+  line-height: 1.8;
+  margin: 20px 0;
 }
 .mov-size{
-  width: 500px;
+  width: 480px;
 }
-
-.ex-movie{
-  clear: both;
-  margin-bottom: 50px;
-}
-.mov-box{
-  width: 894px;
-  height: 300px;
-  border: 1px solid #ff5252;
-    border-left-width: 5px;
-  border-radius: 5px;
-  margin: 30px auto;
-  position: relative;
-}
-.mov-box-video{
-  position: absolute;
-  width: 50%;
-  top: 10px;
-  left: 425px;
-}
-.mov-box-txt{
-  width: 50%;
-  height: 100%;
-}
-.mov-box-txt p{
-  margin: 0;
-  padding: 30px 30px 10px 30px;
-}
-.mov-box-txt p span{
-}
-.mov-box video{
-  width: 415px;
-  height: 280px;
-  border: 1px solid #333;
-  background-color: #333:
-}
-.ex-works{
-  clear: both;
+.mov-title{
+  font-size: 18px;
+  font-weight: bold;
+  /*装飾*/
+padding: 0.4em 0.5em;
+color: #494949;
+/*background: #f4f4f4;*/
+border-left: solid 5px #f64233;
+/*border-bottom: solid 3px #d7d7d7;*/
+margin-left: 0;
+padding-right: 0;
+  }
+.ex-works h4{
+  margin: 20px 5px 5px
 }
 .ex-works-txt{
   padding: 5px 10px;
@@ -551,7 +505,7 @@ height: 250px;
   border-radius: 3px;
   font-size: 14px;
 }
-/*アコーディオンメニュー*************************************************************************/
+/*アコーディオンメニュ スマホ用ー*************************************************************************/
 .accbox {
     margin: 2em 0;
     padding: 0;
