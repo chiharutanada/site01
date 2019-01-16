@@ -24,7 +24,7 @@ height: auto;
 
 h2{
     width: 100%;
-    font-size: 16px;
+    font-size: 24px;
     margin-left: 0;
 }
 h3{
@@ -39,7 +39,7 @@ display: none;
 }
 /*画面サイズ狭く*/
 main{
-    width: 100vw;
+    /*width: 100vw;*/
   margin: 0;
 }
 .container{
@@ -76,42 +76,52 @@ margin: 0;
 padding: 10px 0;
 }
 .page-title+p{
-    padding: 5px 10px 5px 10px;
+    padding: 10px 15px;
+    font-size: 16px;
 }
 /*お問い合わせページ*/
 .contact-main{
     margin: 0;
-    padding: 10px;
+    padding: 15px;
 }
 textarea{
   width: 300px;
   height: 200px;
 }
 .view p{
-padding: 10px;
-padding-right: 30px;
+padding: 15px;
+font-size: 16px;
+}
+.contact-main{
+    padding-top: 0;
+font-size: 16px;
 }
 /*料金ページ*/
-.rates-table, .rates-caution{
+.rates-main{
+padding: 0 15px;
+}
+table{
     padding-left: 0;
-    width: 100vw;
+    width: 100%;
 }
 .rates-table p, .rates-caution p{
 padding: 0 30px 0 10px;
 }
-.rates-main h2{
-width: 80%;
+.rates-main h3{
+font-size: 20px;
 }
 .rates-main p{
-/*width: 350px;*/
-    width: 100vw;
+font-size: 16px;
 }
-.rates-main table{
-    width: 90vw;
+table tr th, table tr td{
+  padding: 10px 5px;
+      font-size: 16px;
 }
 .rates-caution{
-    background-color: #fff;
-    margin: 0;
+    width: 100%;
+    font-size: 16px;
+    /*margin: 30px 0;*/
+    padding: 5px 10px;
 }
 /*自己紹介ページ*/
 .about-main{
@@ -278,17 +288,45 @@ background-color: #ffe7c4;
 
  /*実績*/
 .ex-main{
-        width: 100vw;
-    padding: 0px;
+        width: 100%;
+    padding: 0 15px;
 }
 .ex-main h3{
-    text-align: left;
+    /*text-align: center;*/
+    font-size: 18px;
+    margin-bottom: 10px;
+    margin-top: 50px;
 }
-.voice{
-    padding: 0;
+.ex-main h4{
+    margin: 0;
+    }
+.voice-title{
+    margin: 0;
+}
+.voice-row,.voice, .mov-row, .mov{
+        width: 100%;
+        padding: 0;
+        margin: 0;
+}
+.mov{
+    padding: 10px 0 0 0;
+}
+.mov p{
+    font-size: 16px;
+    margin: 10px 0;
 }
 .video-size, .mov-size{
-width: 350px;
+    width: 100%;
+    padding: 0 0 30px;
+}
+.ex-works-txt{
+padding: 15px;
+margin-bottom: 20px;
+font-size: 16px;
+line-height: 1.8;
+}
+.ex-works h4{
+    padding: 10px 0;
 }
 /*アコーディオンメニュー*/
 .accbox {

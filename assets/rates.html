@@ -13,8 +13,46 @@
   <link rel="stylesheet" href="css/style.css">
   <!-- <link rel="stylesheet" href="css/sanitize.css"> -->
     <link rel="stylesheet" href="css/responsive.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+  <script>
+$(function() {
+  var TopBtn = $('.page_top');
+  var BottomPos = 10; // ボタンの画面下からの位置を指定
+  TopBtn.hide();
+  $(window).scroll(function(e) {
+    $window = $(e.currentTarget);
+    WindowHeight = $window.height(); // ウィンドウの高さ
+    PageHeight = $(document).height(); // ページの高さ
+    footerHeight = $(".gl-footer").height(); // フッタの高さ
+    ScrollTop = $window.scrollTop(); // スクロールした量
+    MoveTopBtn = WindowHeight + ScrollTop + footerHeight - PageHeight;
+
+    //スクロール位置が100でボタンを表示
+    if ($(this).scrollTop() > 100) {
+      TopBtn.fadeIn();
+    }
+    else {
+      TopBtn.fadeOut();
+    }
+    // フッターまでスクロールするとボタンを移動
+    // if(ScrollTop >= PageHeight - WindowHeight - footerHeight + BottomPos) {
+    //   TopBtn.css({ bottom: MoveTopBtn });
+    // }
+    // else {
+    //   TopBtn.css({ bottom: BottomPos });
+    // }
+  });
+  //ボタンを押下するとトップへ移動
+  TopBtn.click(function() {
+    $('body,html').animate({
+      scrollTop: 0
+    }, 300);
+    return false;
+  });
+});
+  </script>
 </head>
-<body id="rate">
+<body id="top">
    <header class="gl-header">
     <div class="container">
         <h1 class="gl-title"><a href="index.html">Russel Goodall通訳</a></h1>
@@ -72,22 +110,22 @@
       <table>
         <tr>
           <th></th>
-          <th>半日（4時間まで）</th>
-          <th>1日（8時間まで）</th>
+          <th>半日<br>(4時間まで)</th>
+          <th>1日<br>(8時間まで)</th>
         </tr>
         <tr>
-          <th>平日</th>
+          <td>平日</td>
           <td>25,000円</td>
           <td>40,000円</td>
         </tr>
         <tr>
-          <th>週末・祝日</th>
+          <td>週末・祝日</td>
           <td>30,000円</td>
           <td>48,000円 </td>
         </tr>
       </table>
-      <p>※英語から日本語への通訳です
-      <p>※追加料金は1時間につき5,000円</p>
+      <p class="table-caution">※英語から日本語への通訳です<br>
+      ※追加料金は1時間につき5,000円</p>
       </div>
       <div class="rates-table">
         <h3>文書翻訳</h3>
@@ -97,11 +135,11 @@
           <th>1和文字/1英単語</th>
         </tr>
         <tr>
-          <th>日本語→英語 / 英語→日本語</th>
+          <td>日本語→英語<br>英語→日本語</td>
           <td>10円</td>
         </tr>
       </table>
-      <p>*500文字以下の翻訳の場合も最低料金￥5,000をご請求させて頂きます<br>*特急料金：上記価格に20％加算</p>
+      <p class="table-caution">*500文字以下の翻訳の場合も最低料金￥5,000をご請求させて頂きます<br>*特急料金：上記価格に20％加算</p>
     </div>
       <div class="rates-table">
         <h3>ビデオ／オーディオからの書き起こし翻訳</h3>
@@ -111,11 +149,11 @@
           <th>料金</th>
         </tr>
         <tr>
-          <th>1分（ビデオ／オーディオ実尺分）</th>
+          <td>1分 (ビデオ／オーディオ実尺分)</td>
           <td>2,000円</td>
         </tr>
         <tr>
-          <th>1時間（作業時間分）</th>
+          <td>1時間 (作業時間分)</td>
           <td>4,000円</td>
         </tr>
       </table>
@@ -128,26 +166,26 @@
           <th>料金</th>
         </tr>
         <tr>
-          <th>1英単語</th>
+          <td>1英単語</td>
           <td>7円</td>
         </tr>
       </table>
     </div>
-      <section class="rates-caution">注意事項<br>
+      <section class="rates-caution"><p>注意事項</p>
       <p>・上記の価格は拘束期間や量等条件によってご相談にのることもできます</p>
       <p>・2012年6月1日現在の価格です</p>
       <p>・予告なく変更になる場合もございます</p>
       </section>
     </section>
-          <p class="pagetop"><a href="#rate">Topへ戻る</a></p>
+    <div class="page_top"><a href="#top"></a></div>
   </main>
   <footer>
       <footer class="gl-footer">
     <div class="container">
     <small>
     <p class="fot-logo"></p>
-    <p class="foot">ラッセル・グドール通訳<br>Tel.090-5335-6482<br>Mail.russell@goodall.jp<br>skype.russellgoodall</p>
-    <p class="copy">&copy;Russel Goodall All rights reserved</p>
+    <p class="foot">ラッセル・グドール通訳<br>Tel.090-5335-6482<br>Mail.russell@goodall.jp<br>skype.russellgoodall<br>
+    &copy;Russel Goodall All rights reserved</p>
   </small>
 </div>
   </footer>
