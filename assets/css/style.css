@@ -505,12 +505,11 @@ padding-right: 0;
   font-size: 14px;
 }
 /*アコーディオンメニュ スマホ用ー*************************************************************************/
-.accbox {
+/*.accbox {
     margin: 2em 0;
     padding: 0;
-    max-width: 900px;/*最大幅*/
+    max-width: 900px;
 }
-/*ラベル*/
 .accbox label {
     display: block;
     margin: 1.5px 0;
@@ -521,21 +520,17 @@ padding-right: 0;
     cursor :pointer;
     transition: all 0.5s;
 }
-/*アイコンを表示*/
 .accbox label:before {
     content: '\f054';
     font-family: 'FontAwesome';
     padding-right: 8px;
 }
-/*ラベルホバー時*/
 .accbox label:hover {
     background :#888;
 }
-/*チェックは隠す*/
 .accbox input {
     display: none;
 }
-/*中身を非表示にしておく*/
 .accbox .accshow {
     height: 0;
     padding: 0;
@@ -543,7 +538,6 @@ padding-right: 0;
     opacity: 0;
     transition: 0.8s;
 }
-/*クリックで中身表示*/
 .cssacc:checked + label + .accshow {
     height: auto;
     padding: 5px;
@@ -552,11 +546,10 @@ padding-right: 0;
 }
 .accbox .accshow p {
     margin: 15px 10px}
-/*アイコンを入れ替える*/
 .cssacc:checked + label:before {
     content: '\f078';
 }
-
+*/
 
 /*料金とサービス*/
 .rates-main{

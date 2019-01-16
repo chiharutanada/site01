@@ -34,7 +34,7 @@ h3{
 /*ヘッダーとフッダー*/
 
     /*非表示にするもの*/
-.util-nav, .gl-nav, .breadcrumb, .gl-footer img ,.rates{
+.util-nav, .gl-nav, .breadcrumb,.rates{
 display: none;
 }
 /*画面サイズ狭く*/
@@ -46,7 +46,12 @@ main{
     width: 100vw;
 }
 /*ヘッダー*/
-
+.gl-header{
+  border: none;
+}
+.gl-title{
+  padding-left: 15px;
+}
 /*ふっだー*/
 .gl-footer{
     font-size: 14px;
@@ -60,7 +65,7 @@ main{
 /*各ページタイトル*/
 .page-title{
 margin: 0;
-padding: 0 15px;
+padding: 10px 15px;
 color: #f64233;
 position: relative;
 }
@@ -329,6 +334,7 @@ line-height: 1.8;
     padding: 10px 0;
 }
 /*アコーディオンメニュー*/
+
 .accbox {
     width: 100vw
     margin: 0;
@@ -336,10 +342,13 @@ line-height: 1.8;
     font-size: 14px;
     /*max-width: 400px;/*最大幅*/*/
 }
-.accbox a{
+.accbox a, .lang{
     display: block;
     color: #000;
     padding: 15px;
+}
+.lang{
+    background: #999;
 }
 .accbox a:hover{
     color: #f64233;
@@ -348,7 +357,7 @@ line-height: 1.8;
 .accbox label {
     display: block;
     margin: 1.5px 0;
-    padding : 13px 12px;
+    padding : 13px 12px 13px 15px;
     color: #fff;
     font-weight: bold;
     background: #444;

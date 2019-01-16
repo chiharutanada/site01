@@ -34,13 +34,6 @@ $(function() {
     else {
       TopBtn.fadeOut();
     }
-    // フッターまでスクロールするとボタンを移動
-    // if(ScrollTop >= PageHeight - WindowHeight - footerHeight + BottomPos) {
-    //   TopBtn.css({ bottom: MoveTopBtn });
-    // }
-    // else {
-    //   TopBtn.css({ bottom: BottomPos });
-    // }
   });
   //ボタンを押下するとトップへ移動
   TopBtn.click(function() {
@@ -55,10 +48,10 @@ $(function() {
 <body id="top">
  <header class="gl-header">
     <div class="container">
-        <h1 class="gl-title"><a href="index.html">Russel Goodall通訳</a></h1>
+        <h1 class="gl-title"><a href="index-en.html">Russel Goodall通訳</a></h1>
         <div class="util-nav">
             <ul>
-                <li><a href="#">日本語</a></li>
+                <li><a href="contact.html">日本語</a></li>
                 <li><a href="contact-en.html">English</a></li>
             </ul>
             <a href="https://www.facebook.com/RussellGoodallInterpreter" class="facebook">facebook</a>
@@ -67,11 +60,11 @@ $(function() {
     <nav class="gl-nav">
       <div class="nav-container">
         <ul>
-          <li id="nav-index"><a href="index.html">トップ</a></li>
-          <li id="about"><a href="about.html">自己紹介</a></li>
-          <li id="nav-experience"><a href="experience.html">実績</a></li>
-          <li id="nav-rates"><a href="rates.html">料金</a></li>
-          <li id="current"><span class="fa fa-envelope" aria-hidden="true">&nbsp;お問い合わせ</span></li>
+          <li id="nav-index"><a href="index-en.html">Top</a></li>
+          <li id="about"><a href="about-en.html">About</a></li>
+          <li id="nav-experience"><a href="experience-en.html">Experience</a></li>
+          <li id="nav-rates"><a href="rates-en.html">Rates</a></li>
+          <li id="current"><span class="fa fa-envelope" aria-hidden="true">&nbsp;Contact</span></li>
         </ul>
       </div>
     </nav>
@@ -85,12 +78,12 @@ $(function() {
     <div class="accshow">
             <div class="nav-container-s">
         <ul>
-          <li id="nav-index"><a href="index.html">トップ</a></li>
-          <li><a href="about.html">自己紹介</a></li>
-          <li><a href="experience.html">実績</a></li>
-          <li><a href="rates.html">料金</a></li>
-          <li><a href="contact.html">お問い合わせ</a></li>
-          <li><span class="lang">言語選択</span></li>
+          <li id="nav-index"><a href="index-en.html">top</a></li>
+          <li><a href="about-en.html">about</a></li>
+          <li><a href="experience-en.html">experience</a></li>
+          <li><a href="rates-en.html">rates</a></li>
+          <li><a href="contact-en.html">contact</a></li>
+          <li><span class="lang">言語選択／Language</span></li>
           <li><a href="contact.html">日本語</a></li>
           <li><a href="contact-en.html">English</a></li>
         </ul>
@@ -102,28 +95,28 @@ $(function() {
   <div class="breadcrumb">
       <div class="form-container">
   <ul>
-    <li><a href="index.html">トップ</a></li>
+    <li><a href="index-en.html">top</a></li>
     <li>&gt;</li>
-    <li>お問い合わせ</li>
+    <li>contact</li>
   </ul>
 </div>
   </div>
   <div class="view">
-      <div class="page-title"><h2>お問い合わせ</h2></div>
-      <p>お仕事のご依頼、お見積り、質問などお気軽にお問い合わせください。</p>
+      <div class="page-title"><h2>Contact</h2></div>
+      <p>Please do not hesitate to contact us for work requests, quotes, questions, etc.</p>
       </div>
     <div class="contact-main">
       <div class="form-box">
     <form action="#" method="poat">
-      <p><label>お名前*<br>
-        <input type="text" name="name" required placeholder="山田 太郎"></p>
-        <p><label>メール*<br>
+      <p><label>Name*<br>
+        <input type="text" name="name" required placeholder="Taro taro"></p>
+        <p><label>Mail*<br>
         <input type="email" name="mail" required></label></p>
-        <p><label>電話番号<br>
-        <input type="tel" name="tel" placeholder="000-0000-0000"></label></p>
-        <p><label>内容*<br>
+        <p><label>Tell<br>
+        <input type="tel" name="tel"></label></p>
+        <p><label>Message*<br>
         <textarea name="comment"  required></textarea></label></p>
-        <button type="submit" class="btn btn-default">確認する</button>
+        <button type="submit" class="btn btn-default">confirm</button>
     </form>
     </div>
      <p class="pagetop"><a href="#top"></a></p>
