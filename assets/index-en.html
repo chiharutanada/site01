@@ -6,7 +6,6 @@
   <meta name="keywords" content="通訳,翻訳,ナレーション,MC,バイリンガル,ラッセル,グドール,ニュージーランド,北海道,ネイティブチェック,書き起こし翻訳">
   <meta name="description" content="翻訳･通訳･ビデオ制作・日本語ナレーターとして活動中、ラッセル・グドール(Russell Goodall)のWebサイトです。">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- ファビコン -->
   <link rel="icon" href="images/favicon_01.png" type="image/png">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
@@ -26,23 +25,13 @@ $(function() {
     footerHeight = $(".gl-footer").height(); // フッタの高さ
     ScrollTop = $window.scrollTop(); // スクロールした量
     MoveTopBtn = WindowHeight + ScrollTop + footerHeight - PageHeight;
-
-    //スクロール位置が100でボタンを表示
     if ($(this).scrollTop() > 100) {
       TopBtn.fadeIn();
     }
     else {
       TopBtn.fadeOut();
     }
-    // フッターまでスクロールするとボタンを移動
-    // if(ScrollTop >= PageHeight - WindowHeight - footerHeight + BottomPos) {
-    //   TopBtn.css({ bottom: MoveTopBtn });
-    // }
-    // else {
-    //   TopBtn.css({ bottom: BottomPos });
-    // }
   });
-  //ボタンを押下するとトップへ移動
   TopBtn.click(function() {
     $('body,html').animate({
       scrollTop: 0
@@ -53,7 +42,6 @@ $(function() {
   </script>
 </head>
 <body id="top">
-
   <header class="gl-header">
     <div class="container">
         <h1 class="gl-title"><a href="index-en.html">Russel Goodall通訳</a></h1>
@@ -64,7 +52,6 @@ $(function() {
             </ul>
             <a href="https://www.facebook.com/RussellGoodallInterpreter" class="facebook">facebook</a>
         </div>
-
     <nav class="gl-nav">
       <div class="nav-container">
         <ul>
@@ -76,18 +63,16 @@ $(function() {
         </ul>
       </div>
     </nav>
-
         </div>
   </header>
   <!-- スマホ用メニュー -->
 <div class="accbox">
-  <!--ラベル2-->
     <input type="checkbox" id="label2" class="cssacc" />
     <label for="label2">Menu</label>
     <div class="accshow">
             <div class="nav-container-s">
         <ul>
-          <li id="nav-index"><a href="index-en.html">Top</a></li>
+          <li id="current-s"><a href="index-en.html">Top</a></li>
           <li><a href="about-en.html">About</a></li>
           <li><a href="experience-en.html">Experience</a></li>
           <li><a href="rates-en.html">Rates</a></li>
@@ -99,7 +84,7 @@ $(function() {
       </div>
     </div>
 </div>
-<!-- スマホ用メニュー -->
+<!-- スマホ用メニューend -->
   <section class="main">
     <section class="hero">
         <div class="hero-img">
@@ -119,7 +104,6 @@ $(function() {
       </div>
       </div>
     </section>
-      <!-- 顔写真はさみたい -->
       <div class="about-box-img">
       </div>
         <section class="rates">
@@ -166,8 +150,7 @@ $(function() {
     <div class="footer-container">
     <small>
     <p class="foot">ラッセル・グドール通訳<br>Tel.090-5335-6482<br>Mail.russell@goodall.jp<br>skype.russellgoodall<br>&copy;Russel Goodall All rights reserved</p>
-    <!-- <p class="copy">&copy;Russel Goodall All rights reserved</p> -->
-    <p class="fot-logo"><!-- <img src="images/logo-footer_r.png" alt="fot-logo"> --></p>
+    <p class="fot-logo"></p>
   </small>
   </div>
   </footer>

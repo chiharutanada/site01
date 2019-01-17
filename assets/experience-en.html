@@ -6,7 +6,6 @@
   <meta name="keywords" content="通訳,翻訳,ナレーション,MC,バイリンガル,ラッセル,グドール,ニュージーランド,北海道,ネイティブチェック,書き起こし翻訳">
   <meta name="description" content="翻訳･通訳･ビデオ制作・日本語ナレーターとして活動中、ラッセル・グドール(Russell Goodall)のWebサイトです。">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- ファビコン -->
   <link rel="icon" href="images/favicon_01.png" type="image/png">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
@@ -26,7 +25,6 @@ $(function() {
     footerHeight = $(".gl-footer").height(); // フッタの高さ
     ScrollTop = $window.scrollTop(); // スクロールした量
     MoveTopBtn = WindowHeight + ScrollTop + footerHeight - PageHeight;
-    //スクロール位置が100でボタンを表示
     if ($(this).scrollTop() > 100) {
       TopBtn.fadeIn();
     }
@@ -34,7 +32,6 @@ $(function() {
       TopBtn.fadeOut();
     }
   });
-  //ボタンを押下するとトップへ移動
   TopBtn.click(function() {
     $('body,html').animate({
       scrollTop: 0
@@ -70,7 +67,6 @@ $(function() {
   </header>
     <!-- スマホ用メニュー -->
 <div class="accbox">
-  <!--ラベル2-->
     <input type="checkbox" id="label2" class="cssacc" />
     <label for="label2">Menu</label>
     <div class="accshow">
@@ -78,7 +74,7 @@ $(function() {
         <ul>
           <li id="nav-index"><a href="index-en.html">Top</a></li>
           <li><a href="about-en.html">About</a></li>
-          <li><a href="experience-en.html">Experience</a></li>
+          <li id="current-s"><a href="experience-en.html">Experience</a></li>
           <li><a href="rates-en.html">Rates</a></li>
           <li><a href="contact-en.html">Contact</a></li>
           <li><span class="lang">言語選択／Language</span></li>
@@ -88,7 +84,7 @@ $(function() {
       </div>
     </div>
 </div>
-<!-- スマホ用メニュー -->
+<!-- スマホ用メニューend -->
   <main>
   <div class="breadcrumb">
       <div class="form-container">
@@ -99,10 +95,8 @@ $(function() {
   </ul>
 </div>
   </div>
-
       <div class="page-title"><h2>Experience / sample</h2></div>
       <p>We also offer narration services for both English and Japanese.<br>We also translate relevant scripts etc. We also offer services including original scripts to narration.</p>
-
 <section class="ex-main">
   <h3>Audio sample <span class="fa fa-volume-up" aria-hidden="true"></span></h3>
       <section class="row voice-row">
