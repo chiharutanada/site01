@@ -3,88 +3,81 @@
 <head>
   <meta charset="UTF-8">
   <title>テスト用です！</title>
-  <meta name="keywords" content="キーワード">
-  <meta name="description" content="サイトの説明です">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- ファビコン -->
-  <link rel="icon" href="fabicon.jpg" type="image/jpg">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/sanitize.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+  <meta name="keywords" content="キーワード"><!-- キーワード(SEO意味なし) -->
+  <meta name="description" content="サイトの説明です"><!-- サイトの説明文 -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"><!-- スマホ対応(スマホで等倍表示にリセット) -->
+  <link rel="icon" href="fabicon.jpg" type="image/jpg"><!-- ファビコン -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"><!-- bootstrap3.3.7 -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css"><!-- bootstrap4.4.0 -->
+  <link rel="stylesheet" href="css/style.css"><!-- CSS読み込み -->
+  <link rel="stylesheet" href="css/sanitize.css"><!-- 基本のリセット用CSS -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script><!-- jQuery3.1.0 -->
   <script>
-    $(function(){
-    //.accordion1の中のp要素がクリックされたら
-  $('.accordion1 p').click(function(){
-    //クリックされた.accordion1の中のp要素に隣接するul要素が開いたり閉じたりする。
-    $(this).next('ul').slideToggle();
-  });
-});
+        // jQueryの記述
+         $(function(){
+        // アコーディオンメニュー
+           $('.accordion1 p').click(function(){    //.accordion1の中のp要素がクリックされたら
+            $(this).next('ul').slideToggle();    //クリックされた.accordion1の中のpに隣接するulが開閉
+            });
+          });
   </script>
 </head>
+
 <body>
   <!-- アコーディオン -->
 <div class="accbox">
-  <!--ラベル1-->
     <input type="checkbox" id="label1" class="cssacc" />
-    <label for="label1">HTML&CSS</label>
+    <label for="label1">ラベル1___ただのテキスト</label>
     <div class="accshow">
-ここに隠す中身
+    ここに隠す中身
     </div>
-    <!--//ラベル1-->
-  <!--ラベル2-->
     <input type="checkbox" id="label2" class="cssacc" />
-    <label for="label2">Menu</label>
+    <label for="label2">ラベル2___ulとliもいけるよ</label>
     <div class="accshow">
-            <div class="nav-container">
         <ul>
-          <li id="nav-index"><a href="index.html">トップ</a></li>
-          <li><a href="about.html">自己紹介</a></li>
-          <li><a href="experience.html">実績</a></li>
-          <li><a href="rates.html">料金</a></li>
-          <li><a href="contact.html">お問い合わせ</a></li>
+          <li><a href="#">MENU_1</a></li>
+          <li><a href="#">MENU_2</a></li>
+          <li><a href="#">MENU_3</a></li>
         </ul>
-      </div>
     </div>
-    <!--//ラベル2-->
-  <!--ラベル3-->
     <input type="checkbox" id="label3" class="cssacc" />
-    <label for="label3">WordPress</label>
+    <label for="label3">ラベル3___</label>
     <div class="accshow">
-      ここに隠す中身
+      ラベル3の中身
     </div>
-    <!--//ラベル3-->
-  <!--ラベル4-->
     <input type="checkbox" id="label4" class="cssacc" />
-    <label for="label4">Material Design</label>
+    <label for="label4">ラベル4___</label>
     <div class="accshow">
-      ここに隠す中身
+      ラベル4の中身
     </div>
-    <!--//ラベル4-->
-  <!--ラベル5-->
     <input type="checkbox" id="label5" class="cssacc" />
-    <label for="label5">Design Tips</label>
+    <label for="label5">ラベル5___</label>
     <div class="accshow">
-      ここに隠す中身
+      ラベル4の中身
     </div>
-    <!--//ラベル5-->
-</div><!--//.accbox-->
-<p>ファビコン</p>
-<span class="fa fa-hand-o-right" aria-hidden="true">1</span>
-<span class="fa fa-file-audio-o" aria-hidden="true">2</span>
-<span class="fa fa-play-circle" aria-hidden="true">3</span>
-<span class="fa fa-play-circle-o" aria-hidden="true">4</span>
-<span class="fa fa-play" aria-hidden="true">5</span>
-<span class="fa fa-youtube-play" aria-hidden="true">6</span>
-<span class="fa fa-volume-up" aria-hidden="true">7</span>
-<span class="fa fa-envelope-o" aria-hidden="true">8</span>
-<span class="fa fa-comments-o" aria-hidden="true">9</span>
-<span class="fa fa-user-o" aria-hidden="true">10</span>
-<span class="fa fa-angle-right" aria-hidden="true">11</span>
-<span class="fa fa-caret-right" aria-hidden="true">12</span>
-<span class="fa fa-angle-double-right" aria-hidden="true">13</span>
-<span class="fa fa-comments-o" aria-hidden="true">14</span>
-<span class="fa fa-envelope" aria-hidden="true">15</span>
+</div>
+<!-- フォントオーサム -->
+    <div class="font-ousum">フォントおーさむ
+        <span class="fa fa-hand-o-right" aria-hidden="true">←1</span>
+        <span class="fa fa-file-audio-o" aria-hidden="true">←2</span>
+        <span class="fa fa-play-circle" aria-hidden="true">←3</span>
+        <span class="fa fa-play-circle-o" aria-hidden="true">←4</span>
+        <span class="fa fa-play" aria-hidden="true">←5</span>
+        <span class="fa fa-youtube-play" aria-hidden="true">←6</span>
+        <span class="fa fa-volume-up" aria-hidden="true">←7</span>
+        <span class="fa fa-envelope-o" aria-hidden="true">←8</span>
+        <span class="fa fa-comments-o" aria-hidden="true">←9</span>
+        <span class="fa fa-user-o" aria-hidden="true">←10</span>
+        <span class="fa fa-angle-right" aria-hidden="true">←11</span>
+        <span class="fa fa-caret-right" aria-hidden="true">←12</span>
+        <span class="fa fa-angle-double-right" aria-hidden="true">←13</span>
+        <span class="fa fa-comments-o" aria-hidden="true">←14</span>
+        <span class="fa fa-envelope" aria-hidden="true">←15</span>
+    </div>
+<!-- 中央配置 -->
+    <div class="center"><a href="#" class="center-text">テキストの中央配置</a></div>
+    <div class="center"><div class="center-box">Boxの中央配置</div></div>
+
+
 </body>
 </html>

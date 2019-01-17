@@ -4,14 +4,14 @@
 *{
   margin: 0;
   padding: 0;
+  list-style-type: none;
 }
 /*アコーディオンメニュー*/
 .accbox {
     margin: 2em 0;
     padding: 0;
-    max-width: 400px;/*最大幅*/
+    max-width: 1000px;/*最大幅 スマホだと画面サイズ最大に*/
 }
-
 /*ラベル*/
 .accbox label {
     display: block;
@@ -22,25 +22,22 @@
     background: #fff2cc;
     cursor :pointer;
     transition: all 0.5s;
+    min-height: 46px;/*min-つけたらコンテンツ内容に応じて広がるよ*/
 }
-
-/*アイコンを表示*/
+/*＞のアイコンを表示*/
 .accbox label:before {
     content: '\f054';
     font-family: 'FontAwesome';
     padding-right: 8px;
 }
-
-/*ラベルホバー時*/
+/*ラベルホバー時(ちょい濃い背景)*/
 .accbox label:hover {
     background :#ffe9a9;
 }
-
 /*チェックは隠す*/
 .accbox input {
     display: none;
 }
-
 /*中身を非表示にしておく*/
 .accbox .accshow {
     height: 0;
@@ -49,7 +46,6 @@
     opacity: 0;
     transition: 0.8s;
 }
-
 /*クリックで中身表示*/
 .cssacc:checked + label + .accshow {
     height: auto;
@@ -57,11 +53,23 @@
     background: #fff5eb;
     opacity: 1;
 }
-
-.accbox .accshow p {
+.accbox .accshow p, .accshow ul li{
     margin: 15px 10px}
-
 /*アイコンを入れ替える*/
 .cssacc:checked + label:before {
     content: '\f078';
+}
+/*ボックスの中央配置*/
+.center{
+    background-color: #ddd;
+    max-width: 1000px;
+    padding: 10px;
+    display: flex;
+}
+.center-text{
+width: 500px;
+text-align: center;
+}
+.center-box{
+    background-color: #888;
 }
